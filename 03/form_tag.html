@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_tag</title>
+</head>
+<body>
+    <h1> Form : 사용자의 정보를 받아서 서버로 전송 해주는 태그</h1>
+    <!-- form
+        속성 : name (변수명)
+            action : 서버에서 처리할 페이지 요청
+            method : 클라이언트에서 서버로 전송할 방식을 지정
+                get : URL을 사용해서 변수와 값을 서버로 전송, 2048 byte 까지만 전송
+                    - 보안이 취약하다. 서버로 전송할 수 있는 데이터 한계가 있다.
+                    - 게시판에서 리스트 정보를 출력할 때 사용
+                post : http 헤더 앞에 변수와 값을 서버로 전송, 정보를 중간에 볼 수 없다.
+                    - 보안이 강하다.
+                    - 전송할 수 있는 데이터량의 제한이 없다.
+                    - 회원가입, 로그인, 인증, 파일을 서버로 전송, 자료실
+    
+    
+    -->
+
+    <!-- 아이디 / 패스워드 입력창 -->
+    <form name = "myform" action = "request.do" method = "get">
+
+        <table border="0" align ="center">
+        <tr> <td> 아이디 : </td>  <td> <input type ="text" name = "id" > </td></tr>
+        <tr> <td> 패스워드 : </td>  <td> <input type = "password" name ="password"> </td></tr>
+
+        <tr> <td> </td><td align ="right"> <input type="reset" value="리셋">
+        <input type="submit" value ="전송"> </td></tr>
+        </table>
+
+    </form>
+
+</body>
+</html>

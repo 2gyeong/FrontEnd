@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀 병합하기 - table </title>
+    <style>
+        table, te, th, td {
+            border: border-collapse: collapse;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 테이블 테그의 속성
+        cospan : 열을 합치는 것 
+        rowspan : 행을 합치는 것
+    -->
+    <h1 align = "center"> 테이블 테그에서 셀 병합하기 </h1>
+
+    <table border="1" width = "500 height = "100" align = "center" >
+        <tr> <td align = "center" ><b> 지역 </b> <td align = "center"> <b>현재기온</b></td > <td colspan ="3" align = "center"> <b>불쾌지수</b> <b> & 습도</b><b> & 풍속</b> </td></tr>
+        <tr> <td rowspan ="3" align = "center" > 서울 / 경기도 / 제주도 <td align = "center"> 23 </td > <td align = "center"> 60점  </td> <td align = "center"> 80% </td>  <td align = "center"> 4.7 </td></tr>
+        <tr>  <td align = "center"> 20 </td > <td align = "center"> 60 </td> <td align = "center"> 80 </td> <td align = "center"> 5.0 </td></tr>
+        <tr> <td align = "center"> 21 </td > <td align = "center"> 65 </td> <td align = "center"> 85 </td> <td align = "center"> 3.5 </td></tr>
+    </table>
+    
+</body>
+</html>

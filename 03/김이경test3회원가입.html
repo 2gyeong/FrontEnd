@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입 양식</title>
+
+</head>
+
+<body>
+<h5><font color = red> * </font> 표시 항목은 필수 입력 항목입니다. </h5>
+<table>
+<form>
+    <tr>
+        <td align="right" bgcolor=#F5F5F5> 
+        아 이 디 </td> <td>
+        <font color = red> * </font> <input type="text" name = "id" >
+        <!--아이디 중복 검사 -->
+        </font> <input type ="button" value="ID중복검사"> 
+        <br>
+        <h5> 아이디는 영문, 숫자 조합으로 하셔야 합니다. [4자리 이상 12자리이하] <br>
+            아이디는 <font color = red> 소문자 </font>로 저장 됩니다. </h5> </td>
+    </tr> 
+
+    <tr>
+        <td align="right" bgcolor=#F5F5F5>
+        암 호 </td><td> 
+        <font color = red> * </font> <input type="password" name="password">
+    <tr><td align="right" bgcolor=#F5F5F5>암호확인</td><td> <font color = red> * </font> <input type="password" name="password"> </td></tr> 
+    <tr><td align="right" bgcolor=#F5F5F5>이 름 </td><td> <font color = red> * </font> <input  type="text" name="name" > </td></tr> 
+    <tr><td align="right" rowspan="2" bgcolor=#F5F5F5>대화명 </td> <td> &nbsp; <input type="text" name="nickname"> 
+        <input type="button" value="중복검사"> </td></tr> 
+        <tr><td veilgn = top > <h5> <pre></pre>대화명을 지정하지 않으시면 회원님의 이름으로 대화명이 지정됩니다. <br>
+        대화명은 한글, 영문 관계없이 10글자 이내로 하셔야 합니다. </pre></h5> </td></tr> 
+
+    <tr><td align="right" bgcolor=#F5F5F5>주민등록번호</td><td> <font color = red> * </font> <input type="text" size="7" maxlength ="6"> - <input type="text" size="8" maxlength ="7"> </td></tr> 
+
+    <tr><td align="right" bgcolor=#F5F5F5>생년월일</td><td> <font color = red> * </font> 
+        <input type="text" size="5" maxlength="">년<input type="text" size="5" maxlength="2">월<input type="text" size="5" maxlength="2">일</td></tr> 
+
+    <tr><td align="right" bgcolor=#F5F5F5>성 별</td><td> <font color = red> * </font> 
+    <input type="radio" name="sex" value="man"> 남성
+    <input type="radio" name="sex" value="woman"> 여성 </td></tr> 
+
+    <tr><td align="right" bgcolor=#F5F5F5> E - mail</td><td> <font color = red> * </font> <input type="text" name="e-mail"></td></tr>
+    <tr><td align="right" bgcolor=#F5F5F5>메일수신</td><td> <font color = red> * </font> 
+    <input type="radio" name="mail" value="agree"> 수신동의
+    <input type="radio" name="mail" value="disagree"> 수신거부</td></tr>
+
+    <tr><td align="right" bgcolor=#F5F5F5>우편번호</td><td> <font color = red> * </font>
+    <input type ="text"> - <input type="text"> <input type="button" value="검색"></td></tr>
+
+    <tr><td align="right" bgcolor=#F5F5F5>주소</td><td> <font color = red> * </font> <input type="text">
+            <input type="text"> </td></tr>
+    <tr><td align="right" bgcolor=#F5F5F5>전화번호</td><td> <font color = red> * </font>
+        <select>
+            <option value="02" selected> 02 </option>
+            <option value="053"> 053 </option>
+        </select> </td></tr>
+
+    <tr><td align="right" bgcolor=#F5F5F5>핸드폰번호</td><td> <font color = red> * </font>
+    <select>
+        <option value="010" selected> 010 </option>
+        <option value="011" > 011 </option>
+    </select>
+        <input type="text" size="5" maxlength="4">
+        -
+        <input type="text" size="5" maxlength="4">
+    </td></tr>
+
+    <tr><td align="right" bgcolor=#F5F5F5>직 업 </td><td> &nbsp;
+    <select>
+        <option value="선택하세요" selected> 선택하세요 </option>
+        <option value="학생" > 학생 </option>
+        <option value="회사원" > 회사원 </option>
+        <option value="교사" > 교사 </option>
+    </select>
+    </td></tr>
+
+    <tr><td align="right" bgcolor=#F5F5F5>취 미</td><td> <font color = red> * </font>
+    <input type = "checkbox" name = "hobby1" value="m1"> 스포츠 &nbsp; &nbsp;
+    <input type ="checkbox" name = "bobby2" value="m2"> 쇼핑 &nbsp; &nbsp;
+    <input type ="checkbox" name = "bobby3" value="m3"> 인터넷 &nbsp; &nbsp;
+    <input type ="checkbox" name = "bobby4" value="m4"> 여행 &nbsp; &nbsp;
+    <input type ="checkbox" name = "bobby5" value="m5"> 독서 &nbsp; &nbsp;
+    <input type ="checkbox" name = "bobby6" value="m6"> 영화감상 &nbsp; &nbsp;
+    <input type ="checkbox" name = "bobby7" value="m7"> 음악감상 &nbsp; &nbsp;
+    </td></tr>
+    
+    <tr><td align="right"  bgcolor=#F5F5F5> 자기소개 </td><td> <textarea name = "profile" rows = 10 cols = 50 ></textarea> </td></tr>
+
+    <tr><td colspan = "2" align = center>
+    <input type="submit" value="등록"> &nbsp;&nbsp;&nbsp;
+    <input type="reset" value="취소">
+    </td></tr>
+</form>
+</table>    
+</body>
+</html>

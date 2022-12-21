@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식 폼</title>
+</head>
+<body>
+    <font color = "red"> <h3> 회원가입 </h3> </font>
+    <table>
+    <form name ="myform2" action="login.do" method ="get"> <br>
+        <tr><td align = "right"> 이름 :</td> <td> <input type="text" name = "name" placeholder="이름을 입력해 주세요"> </td></tr>
+        <tr><td align = "right">아이디 : </td> <td> <input type ="text" name ="id" placeholder="아이디를 입력해 주세요"> 
+            <!--아이디 중복 체크-->  <input type="button" value="아이디 중복 체크" > </td> </tr>
+        <tr><td align = "right">패스워드 : </td> <td> <input type="password" name = "pwd" placeholder="패스워드를 입력해 주세요" ></td> </tr>
+        <tr><td align = "right">패스워드 확인 : </td> <td> <input type="password" name = "pwd" placeholder="패스워드를 다시 한번 입력해 주세요" ></td> </tr>
+         <!-- input type = "radio" : 여러 개의 내용중 1개만 선택함, 변수 이름이 동일해야 한다. 
+                 value 를 사용해서 변수의 값을 넘겨야 한다.   -->
+        <tr><td align = "right">성별 : </td> <td> <input type="radio" name = "man" > 남성 <input type = "radio" name ="woman"> 여성 
+        <input type = "radio" name = "animal"> 사람아님 </td> </tr>
+
+
+        
+        <!-- input type = "checkbox" : 여러 개의 내용을 동시에 선택함. 변수의 값을 각각 다르게 입력.
+            value 를 사용해서 변수의 값을 넘겨야 한다. -->
+        <tr><td align = "right">취미 :</td> <td>
+                <input type = "checkbox" name = "hobby1" value="m1"> 음악감상 &nbsp; &nbsp;
+                <input type ="checkbox" name = "bobby2" value="m2"> 독서 &nbsp; &nbsp;
+                <input type ="checkbox" name = "bobby3" value="m3"> 운동 &nbsp; &nbsp;
+                <input type ="checkbox" name = "bobby4" value="m4"> 등산 &nbsp; &nbsp;
+                <input type ="checkbox" name = "bobby5" value="m5"> 게임 &nbsp; &nbsp;
+            </td> </tr>
+        
+        <!-- select : 드롭다운 메뉴로 선택을 해주는 메뉴-->
+        <tr><td align = "right"> 휴대전화 : </td> <td>  <select name = "nation">
+                    <option value="082" selected> 대한민국(082) </option>
+                    <option value="006"> 미국(006) </option>
+                    <option value="007"> 영국(007) </option>
+                    <option value="008"> 캐나다(007) </option>
+                </select>
+                -
+                 <select name="zone">
+                    <option value="010" selected> 010 </option>
+                    <option value="011"> 011 </option>
+                    <option value="012"> 012 </option>
+                    <option value="013"> 013 </option>
+                    <option value="014"> 014 </option>
+                </select>
+                -
+                <input type="text" name="phone3" size="5" maxlength ="4">
+                -
+                <input type="text" name="phone4" size="5" maxlength ="4">
+                </td> </tr>
+
+                <!-- textarea 글을 작성할 수 있는 박스 -->
+        <tr><td align = "right"> 자기소개 : </td><td><textarea name ="profile" rows = 10 cols = 50
+                placeholder="글을 입력해 주세요."></textarea> </td> </tr>
+                <!-- input type = "file"    :   클라이언트 컴퓨터의 특정 파일을 서버에 전송할 수 있도록 함-->
+        <tr><td align = "right">첨부 파일 : </td> <td> <input type="file" > 2mb 까지만 전송해 주세요. </td> </tr>
+        <tr height ="20"></tr>
+        <tr><td></td><td align = "right"> <input type = "reset" value="리셋"> 
+                                 <input type = "submit" value = "서버로 전송"> </td> </tr>
+
+    </form>
+    </table>
+
+</body>
+</html>
