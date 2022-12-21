@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div 태그에서 css 적용 </title>
+    <style>    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    div{
+            background-color : yellow ;
+            border: 1px dashed green;
+            width: 400px;
+            height: 400px;
+            margin: 10px; 
+            padding: 10px;
+        }
+    div:hover{
+        background-color: black;
+        border : 5px red;
+        width : 200px;
+        height : 200px
+    }
+
+    </style>
+</head>
+<body>
+    <!-- div 블락으로 출력 : with, height, margin, padding 
+
+        margin : 라인의 바깥쪽 여백
+        padding : 라인의 안쪽 여백
+
+    * 인라인 태그에서는 : with, height, margin, padding 이 작동되지 않는다.
+    -->
+
+    <div>div 1</div>
+    <div>div 2</div>
+    <div>div 3</div>
+    <div>div 4</div>
+    <div>div 5</div>
+    
+</body>
+</html>
