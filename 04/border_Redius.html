@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Radius</title>
+    <style>
+        body{
+            font-weight: bold; font-size: 8pt !important;
+        }
+        .b1{
+            width : 300px; height : 50px ;
+            color: red; border-style: solid;
+            border-radius: 35px;
+        }
+        .b2{
+            width : 300px; height : 50px ;
+            color: blue; border-style: solid;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-left: 25px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .b3{
+            width : 300px; height : 50px ;
+            color: aqua; border-style: solid;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        .b4{
+            width : 300px; height : 300px ;
+            color: brown; border-style: dotted;
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+        #bb1 {
+            width : 100px; height : 100px ;
+            color: green; border-style: solid;
+            border-radius: 50px;
+        }
+        #bb2 {
+            width : 50px; height : 50px ;
+            color: green; border-style: solid;
+            border-radius: 25px;
+        }
+        #bb3 {
+            width : 15px; height : 15px ;
+            color: green; border-style: solid;
+            border-radius: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3> Border-Radius</h3>
+    <!-- 
+        border-radius : 사각형의 4개의 모서리를 둥글게 처리
+            border-top-left-radius : 왼쪽 상단 처리
+            border-top-right-radius : 오른쪽 상단 처리
+            border-bottom-left-radius : 왼쪽 하단 처리
+            border-bottom-right-radius : 오른쪽 하단 처리
+
+
+    -->
+</body>
+
+<h1 class = "b1"> 둥근 모서리 처리 예제 1</h1>
+<h1 class = "b2"> 둥근 모서리 처리 예제 2</h1>
+<h1 class = "b3"> 둥근 모서리 처리 예제 3</h1>
+<h1 class = "b4"> 둥근 모서리 처리 예제 4</h1>
+
+<div id = "bb1" > div 박스 1</div>
+<div id = "bb2" > div 박스 2</div>
+<div id = "bb3" > div 박스 3</div>
+</html>

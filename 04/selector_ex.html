@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector_ex</title>
+    <style>
+    div {color: white;}
+    input:focus{background-color: aqua;}
+    input:checked + div.d1 {color: gray;}
+    input:checked + div.d2{ color:black}
+    </style>
+</head>
+<body>
+    <!--질문의 답을 숨기고 체크박스를 클릭 시 정답을 보여주고 가리고 -->
+    <h2> 질문 답변에 대한 - selector 적용</h2>
+    <h3> 대한민국의 수도는 ? </h3>
+    <p> 정답 작성 : <input type = "text"></p>
+    <h2>Answer</h2>
+    힌트보기 : <input type="checkbox">
+    <div class = "d1"> 남대문이 있는 곳이죠... </div>
+    정답보기 : <input type="checkbox">
+    <div class = "d2">
+        서울
+    </div>
+</body>
+</html>

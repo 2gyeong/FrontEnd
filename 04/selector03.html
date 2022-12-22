@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector - 후손, 자손, 인접형제, 일반형제, 그룹 선택자 </title>
+    <style>
+        div ul{ color: red; }
+        div h2{color: yellow; background-color: purple;}
+
+        body > div > h3 {color: blue}
+        body > p {color: green ; background-color: yellow;}
+        body > h3 > tel > home {color: aqua;}
+    </style>
+</head>
+<body>
+    <h3> Selector - 후손( 공백 ), 자손( > ), 인접 일반형제( + ), 일반형제( ~ ), 그룹 선택자( , ) </h3>
+    
+    <!--
+        후손 선택자 : 선택자A 선택자B       <== 선택자B는 선택자A에 반드시 포함된 경우
+        자손 선택자 : 선택자A > 선택자B     <== 부모 선택자A의 직계 자손인 선택자B를 선택
+        인접 형제 선택자 : 선택자A + 선택자B <== 선택자A에 바로 다음에 위치한 선택자B를 선택
+        일반 형제 선택자 : 선택자A ~ 선택자B <== 선택자A에 인접해서 나타나는 선택자B 
+        그룹 선택자 : 선택자A, 선택자B <= 선택자A, 선택자B를 모두 선택
+    -->
+
+    <div>
+        <h2> Descendant Selector_1 (후손 선택자 : 제목) </h2>
+        <ul> 후손 선택자
+            <li> 자식의 자식 ( 후손1 ) </li>
+            <li> 자식의 자식 ( 후손2 ) </li>
+        </ul>
+
+    </div>    
+
+    <!-- div 바깥의 h2는 스타일 적용 되지 않음.-->
+    <h2> Descendant Selector_2 (후손 선택자 : 제목) </h2> 
+
+    <!-- 자손 선택자 -->
+    <div>
+        <h3>Child Selector_1 </h3>
+    </div>
+    <p> 자식 선택자</p>
+    <h3>
+        <sno>123456</sno>
+        <std>홍길동</std>
+        <tel>
+            <office> 02-3456-7585</office> <br>
+            <home> 010 - 1234 - 4567</home>
+
+        </tel>
+    </h3>
+
+</body>
+</html>

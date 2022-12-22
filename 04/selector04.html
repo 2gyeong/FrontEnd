@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector - 후손, 자손, 인접형제, 일반형제, 그룹 선택자</title>
+    <style>
+        h2 + ul   { color: royalblue;}
+        div + h3 {color: red;}
+        h3 + p {color: purple; background-color: orange;}
+        span + p {color: olive;}
+    </style>
+</head>
+<body>
+
+    <!--
+        인접 형제 선택자 : 선택자A + 선택자B <== 선택자A에 바로 다음에 위치한 선택자B를 선택
+    -->
+    <!-- 인접 형제 선택자 -->
+    <div>
+        <h1> 인접 형제 선택자1 </h1>
+        <h2> 인접 형제 선택자2 </h2>
+        <ul> 목록
+            <li>주제1</li>
+            <li>주제2</li>
+        </ul>
+    </div>
+    <h3> Adjacent Seletor_1 </h3>
+    <p> 인접형제 선택자에 의한 스타일 적용</p>
+    <h3> Adjacent Seletor_1 </h3>
+    <span> 인접형제 실습1 </span>
+    <p> 인접형제 실습2 </p>
+    
+</body>
+</html>

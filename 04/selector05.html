@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector - 후손, 자손, 인접형제, 일반형제, 그룹 선택자</title>
+    <style>
+        h1 ~ ul {color: red;}
+        p ~ ul {color : blue !important}
+        h1, h2, h3{background-color: hotpink;}
+    </style>
+</head>
+<body>
+    <!--      
+        일반 형제 선택자 : 선택자A ~ 선택자B <== 선택자A에 인접해서 나타나는 선택자B 
+        그룹 선택자 : 선택자A, 선택자B <= 선택자A, 선택자B를 모두 선택-->
+    <!-- 일반형제 ( ~ ) -->
+    <div>
+        <h1> 형제 선택자 1</h1>
+        <h2> 형제 선택자 2</h2>
+        <ul>목록
+            <li> 주제1</li>
+            <li> 주제2</li>
+        </ul>
+    </div>
+    <h3> Silbing Selector_1</h3>
+    <h4> 같은 레벨의 형제</h4>
+    <p> 일반 형제 선택자에 의한 스타일 적용</p> 
+    <h3> silbing Selector_2</h3>
+    <h3> silbing Selector_3</h3>
+
+    <ul>목록2
+        <li> 주제3</li>
+        <li> 주제4</li>
+    </ul>
+
+</body>
+</html>
