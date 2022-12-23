@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 (시멘트릭 태그) - Float 속성 사용 </title>
+    <style>
+        a:link {text-decoration: none; color: black;}
+        header{width: 100%; height : 100px; border: 1px solid red;}
+        nav {width: 20%; height: 500px; border: 1px solid red;
+            float: left;}
+        section  {width: 60%; height: 500px; border: 1px solid red;
+            float: left;}
+        .s1{width: 19%; border: 1px solid red;
+            float: left;}
+
+        footer { width: 100%; height : 100px; border: 1px solid red; 
+            clear: both;}
+    </style>
+</head>
+<body>
+    <!-- 
+        HTML5 에서 지원되는 태그 : 검색엔진에서 정보를 클롤링 하게됨 ...
+        <header> : 페이지 상단에 주로 로고 메뉴, 등의 콘텐츠
+        <footer> : 페이지 하단에 주로 위치, 저작권, 주소, 전화번호, 연락처 정보
+        
+        <section> : 주로 article(아티클)의 그룹핑
+            <article> : 하나의 컨텐츠 (하나의 기사) 
+        <nav> : 주로 메뉴를 처리할 때 사용
+        <aside> : 왼쪽 또는 오른쪽에 위치하며 컨텐츠 메뉴나 배너 등을 넣는 곳
+
+
+    -->
+
+
+
+    <header> Header 최상단의 레이아웃 - 주로 상단에 내용 </header>
+    <!-- nav, section, aside는 float 속성을 사용하여 
+        같은 라인으오 출력-->
+    <nav> NAV 메뉴 내용을 적용할 때 사용됨 <P/>
+        <span>목차</span>
+        <ul>
+            <li><a href = "#">구글</a></li>
+            <li><a href="#"> 애플 </a></li>
+            <li><a href="#"> 오라클 </a></li>
+            <li><a href="#"> 자바 </a></li>
+            <li><a href="#"> 아마존 </a></li>
+            <li><a href="#"> 에져 </a></li>
+            <li><a href="#"> MySQL </a></li>
+
+        </ul>
+    
+    
+    </nav>
+    <section> 
+        SECTION
+        <article> 컨텐츠 1</article>
+        <article> 컨텐츠 2</article>
+        <article> 컨텐츠 3</article>
+    </section>
+
+    <section class="s1">
+    <aside> SECTION2 - aside 오른쪽, 왼쪽에 내용 </aside>
+    </section>
+
+    <footer> 최하단의 레이아웃 - 회사주소, 전화번호</footer>
+
+</body>
+</html>

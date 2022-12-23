@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid red;
+
+            float: left;
+        }
+        .c { clear: both;   /*float 속성을 제거한다. */}
+    </style>
+</head>
+<body>
+    <!--
+        float 속성 :
+        인라인 태그나 블락 태그에서 화면을 배치하는 방법을 설정
+        inherit : 부모의 요소의 float 속성을 상속 받는다.
+        left : 요소를 왼쪽으로 정렬
+        Right : 요소를 오른쪽으로 정렬
+        none : float 속성을 적용하지 않는다.
+
+        중요 : float 은 그 속성이 유지가 되므로 clear를 
+        사용해서 하위에서 처리하지 않도록 할때 
+
+    -->
+
+    <div> 박스 1 </div>
+    <div> 박스 2 </div>
+    <div> 박스 3 </div>
+    <div class="c"> 박스 4 </div>
+    <div> 박스 5 </div>
+    <div> 박스 6 </div>
+    <div> 박스 7 </div>
+    <div class="c" > 박스 8 </div>
+    <div> 박스 9 </div>
+    <div> 박스 10 </div>
+
+    <div> 박스 1 </div>
+    <div class="c"> 박스 2 </div>
+    <div> 박스 3 </div>
+    <div> 박스 4 </div>
+    <div> 박스 5 </div>
+    <div class="c"> 박스 6 </div>
+    <div> 박스 7 </div>
+    <div> 박스 8 </div>
+    <div> 박스 9 </div>
+    <div class="c"> 박스 10 </div>
+
+    <div> 박스 1 </div>
+    <div> 박스 2 </div>
+    <div> 박스 3 </div>
+    <div class="c"> 박스 4 </div>
+    <div> 박스 5 </div>
+    <div> 박스 6 </div>
+    <div> 박스 7 </div>
+    <div class="c" > 박스 8 </div>
+    <div> 박스 9 </div>
+    <div> 박스 10 </div>
+
+    <div> 박스 1 </div>
+    <div class="c"> 박스 2 </div>
+    <div> 박스 3 </div>
+    <div> 박스 4 </div>
+    <div> 박스 5 </div>
+    <div class="c"> 박스 6 </div>
+    <div> 박스 7 </div>
+    <div> 박스 8 </div>
+    <div> 박스 9 </div>
+    <div class="c"> 박스 10 </div>
+</body>
+</html>

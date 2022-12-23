@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투명도 설정</title>
+    <style>
+        a:link{ /* 사이트를 방문하지 않았을 때 */
+            opacity: 0.5 ;
+            text-decoration: none;  /* link에 줄 없애기 */
+        }
+        a:hover{    /*마우스를 올렸을 때*/
+            opacity: 1;
+            text-shadow:  1px 1px 5px black;}
+
+        img {opacity: 0.5;}
+        img:hover{opacity: 1;
+        box-shadow: 5px 5px 5px black;
+        padding: 10px;}
+    </style>
+</head>
+<body>
+    <h3> 마우스를 올리면 선명하게 보입니다.</h3>
+    <!-- opacity : 0이면 불투명
+        0 (투명도가 높다) ~ 1 (불투명도가 높다) 
+    
+    -->
+    <div> 
+        <a href="http://www.google.co.kr" target = "_blank"> 구글 </a>
+
+    </div>
+    <p></p>
+    <div>
+        <img src="../img/img-04/pic1.jpg"> </img>
+    </div>    
+</body>
+</html>

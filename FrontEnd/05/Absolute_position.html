@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Style 3 - Absolute Position</title>
+    <style>
+        * {margin: 0 ; padding: 0;}
+        p {width: 400px; height: 50px; border: 1px solid red;}
+        .b1 { 
+            position: absolute;
+            top : 0 ; left: 0px;
+        }
+        .b2 {
+            position: relative;
+            top : 0 ; left: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 절대 위치 적용 : 
+        기준점 : top 0, left 0 <== 좌표의 왼쪽 최상단이 기준점
+    -->
+    <h1> Position Style 3 - Absolute Position</h1>
+    <p class ="b1"> 절대 위치 설정 적용1 </p>
+    <p class ="b2"> 절대 위치 설정 적용2 </p>
+    <p class ="b3"> 상대 위치 설정 적용3 </p>
+    
+</body>
+</html>
