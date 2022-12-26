@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: green;
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+
+        }
+        div.container {
+            background-color: white;
+            border: 1px solid black;
+        }
+        .transformed:hover {
+         /*   backface-visibility: visible; */
+            transform-origin: 50% 42%;
+            transform: perspective(500px) rotateY(20deg) rotate(0deg);
+        }
+        .transformed2:hover {
+             /*   backface-visibility: visible; */
+            transform-origin: 50% 42%;
+            transform: perspective(500px) rotateY(20deg) rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class = "transformed"> 박스 1</div>    
+    </div>
+    <p/><p/>
+
+    <div class="container"> 
+        <div class = "transformed2"> 박스 2</div>    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div {
+            border: 1px solid red;
+            width: 300px; height: 300px;
+            background-color: orange;
+            transition-property: width, background, color ;
+            transition: 10s;
+        }
+
+        div:hover{
+            border: 1px solid red;
+            width: 700px;
+            background-color: blue; /*박스의 배경색*/
+            color: white;           /*박스의 글자색*/
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        transition-property : 변화 효과를 적용할 속성을 나열
+        transition-duration : 변화가 지속되는 시간 지정
+        transition-timing-function : 변화의 시작과 글의 타이밍 지정
+        transition-delay : 변화 효과를 지정한 시간동안 지연시킴
+
+    -->
+</body>
+    <div> 마우스를 올리면 여러 속성이 변화합니다.<br><br>
+        1. 넓이 변화 <br>
+        2. 백그라운드 컬러변화 <br>
+        3. 글자색 변화 
+
+    </div>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background-color: yellow;
+            border: 5px solid black;
+            transition-duration: 5s;
+
+            transition-delay: 3s; /* 3초 (지연시키고)이후에 작동됨*/
+        }
+
+        div:hover{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- transition-delay : 5s <== 이벤트 5초 후에 작동-->
+    <div> 마우스를 올리면 3초 후에 작동 됩니다.</div>
+</body>
+</html>

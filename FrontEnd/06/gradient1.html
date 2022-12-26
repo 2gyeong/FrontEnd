@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grad1 {
+            width: 300px;
+            height: 70px;
+            border: 1px solid red;
+            background:linear-gradient(to left, red, yellow) ;
+        }
+        #grad2 {
+            width: 300px;
+            height: 70px;
+            border: 1px solid red;
+            background:linear-gradient(90deg, red, yellow, green) ;
+            opacity: 0.5;
+        }
+
+        #grad3 {
+            width: 300px;
+            height: 70px;
+            border: 1px solid red;
+            background:linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple) ;
+            opacity: 0.5;
+        }
+
+        .g1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background: radial-gradient( red, yellow);
+        }
+
+        .g2 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background: radial-gradient( red, yellow, green);
+        }
+
+        .g3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background: radial-gradient(red 10%, orange, yellow 10% , green, blue, navy, purple );
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 그라디언트 효과 : 색깔의 번짐 효과를 처리함, 
+        background, background-image 속성을 사용함
+            - 선형 (linear-gradient)
+            - 원형 (radial - gradient)
+
+        번짐 효과를 처리할 방향 설정 (direction)
+            방향        각도
+        to top          0deg, 360deg
+        to right        90deg
+        to bottom       180deg
+        to left         270deg
+    
+    -->
+
+    <!-- 선형 그라디언트-->
+    <h4> 2색 선형 그라디언트</h4>
+    <div id = "grad1"> </div>
+
+    <h4> 3색 선형 그라디언트</h4>
+    <div id = "grad2"> </div>
+
+    <h4> 7색 선형 그라디언트</h4>
+    <div id = "grad3"> </div>
+
+
+    <!-- 원형 그라디언트 -->
+    <h4> 기본 2색 원형 그라디언트</h4>
+    <div class = "g1"> </div>
+
+    <h4> 3색 원형 그라디언트</h4>
+    <div class = "g2"> </div>
+
+    <h4> 7색 원형 그라디언트</h4>
+    <div class = "g3"> </div>
+
+</body>
+
+</html>

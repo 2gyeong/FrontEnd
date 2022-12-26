@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css를 사용한 상단 메뉴 - 드롭다운 메뉴</title>
+    <style> 
+        /* 기본 설정된 내용을 리셋 */
+        * {margin: 0; padding: 0;}
+        li{list-style: none; }
+        a {text-decoration: none; font-size: 14px;}
+
+        /* 수정 부분 시작*/
+        .menu {
+            border: 1px solid red;
+            width: 300px;
+            margin: 150px;
+            }
+
+        .menu > li {        /* 직계자손 */
+         /*   float: left; */    /* 주석처리 : top 메뉴 구성 시 사용*/ 
+        text-align: center;
+        width: 100%;
+        line-height: 40px;
+        background-color: #5778ff;
+        }
+        /* 수정 부분 끝*/
+
+        .menu a {   /* .menu 의 후손 a*/
+            color: white;
+        }
+
+        .submenu > li {
+            line-height: 50px;
+            background-color: #94a9ff;
+        }   
+
+        /* submenu는 기본적으로 보이지 않게 처리 */
+        .submenu {
+            height: 0;
+            overflow: hidden; /* 블락 밖으로 출력되는 내용을 없앰 */
+        }
+
+        /* 마우스를 올렸을 때 서브 메뉴를 보이도록 처리함 */
+        .menu > li:hover {
+            background-color: #94a9ff;
+            
+        }
+
+        .menu > li:hover .submenu {
+            height: 250px; /* sub menu를 보이도록 처리*/
+            transition-duration: 2s; /* 전체 출력까지 인터벌*/
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>
+            <a href="#"> MENU 1 </a> <!--상위 메뉴-->
+            <ul class="submenu">  <!--하위 메뉴-->
+            <li><a href="#"> submenu 1 </a></li>
+            <li><a href="#"> submenu 2 </a></li>
+            <li><a href="#"> submenu 3 </a></li>
+            <li><a href="#"> submenu 4 </a></li>
+            <li><a href="#"> submenu 5 </a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"> MENU 2 </a> <!--상위 메뉴-->
+            <ul class="submenu">  <!--하위 메뉴-->
+            <li><a href="#"> submenu 1 </a></li>
+            <li><a href="#"> submenu 2 </a></li>
+            <li><a href="#"> submenu 3 </a></li>
+            <li><a href="#"> submenu 4 </a></li>
+            <li><a href="#"> submenu 5 </a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"> MENU 3 </a> <!--상위 메뉴-->
+            <ul class="submenu">  <!--하위 메뉴-->
+            <li><a href="#"> submenu 1 </a></li>
+            <li><a href="#"> submenu 2 </a></li>
+            <li><a href="#"> submenu 3 </a></li>
+            <li><a href="#"> submenu 4 </a></li>
+            <li><a href="#"> submenu 5 </a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"> MENU 4 </a> <!--상위 메뉴-->
+            <ul class="submenu">  <!--하위 메뉴-->
+            <li><a href="#"> submenu 1 </a></li>
+            <li><a href="#"> submenu 2 </a></li>
+            <li><a href="#"> submenu 3 </a></li>
+            <li><a href="#"> submenu 4 </a></li>
+            <li><a href="#"> submenu 5 </a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"> MENU 5 </a> <!--상위 메뉴-->
+            <ul class="submenu">  <!--하위 메뉴-->
+            <li><a href="#"> submenu 1 </a></li>
+            <li><a href="#"> submenu 2 </a></li>
+            <li><a href="#"> submenu 3 </a></li>
+            <li><a href="#"> submenu 4 </a></li>
+            <li><a href="#"> submenu 5 </a></li>
+            </ul>
+        </li>
+        
+
+    </ul>
+
+</body>
+</html>

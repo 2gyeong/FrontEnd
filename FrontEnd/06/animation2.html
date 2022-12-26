@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {width: 40px; height: 40px;
+            border-radius: 20px;
+            background-color: red;
+            position: relative;
+            animation: colorbox 20s;
+            
+        }
+        #d2{
+            animation: colorbox2 10s;
+            animation-delay: 3s;
+        }
+
+        @keyframes colorbox {
+            from{ background:red; top : 0px ;left : 0px;}
+            15%{background-color: orange; top: 300px; left: 0px;}
+            30%{background-color: yellow; top: 100px; left: 100px;}
+            50%{background-color: yellowgreen; top: 700px; left: 400px;}
+            75%{background-color: orange; top: 0px; left: 700px;}
+            to{background-color: red; top: 800px; left: 800px;}
+        }
+
+        @keyframes colorbox2 {
+            from{ background:red; top : 0px ;left : 0px;}
+            15%{background-color: orange; top: 300px; left: 0px;}
+            30%{background-color: yellow; top: 100px; left: 100px;}
+            50%{background-color: yellowgreen; top: 700px; left: 400px;}
+            75%{background-color: orange; top: 0px; left: 700px;}
+            to{background-color: red; top: 800px; left: 800px;}
+        }
+    </style>
+</head>
+<body>
+    <div> </div>
+    <div id = "d2"></div>
+    
+</body>
+</html>

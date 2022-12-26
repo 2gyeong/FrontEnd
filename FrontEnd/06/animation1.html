@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin : 0px; padding: 0px;}
+        div{ width: 100px; height: 100px;
+            background-color: red;
+            position: relative; /*자신의 원래 박스를 기준점*/
+            animation: boxmove 5s;
+            margin: 50px;
+        }
+
+        #d1 {animation: boxmove2 5s;}
+        #d2 {position: absolute; animation: boxmove3 5s;}
+        #d3 {position: absolute; animation: boxmove4 5s;}
+        
+        @keyframes boxmove {
+            from{ left: 0px;}        /*좌표의 시작점*/
+                to{left:700px}     /*좌표의 끝점*/
+            }
+        
+
+        @keyframes boxmove2 {
+            from {left : 100%}
+                to{left : 0%}
+        }
+
+        @keyframes boxmove3 {
+            from{top : 0px; left: 0px;}
+            to{top : 700px; left: 700px}
+        }
+        @keyframes boxmove4 {
+            from{top : 700px; left: 0%;}
+            to{top : 0px; left: 100%}
+        }
+    </style>
+</head>
+<body>
+    <div> 애니메이션 박스 1 </div>
+    <div id = "d1"> 애니메이션 박스 2 </div>
+    <div id = "d2"> 애니메이션 박스 3 </div>
+    <div id = "d3"> 애니메이션 박스 4 </div>
+    <!--
+    <p><b> 참고 : )</b> IE9버전 이하에서는 작동되지 않습니다. </p>
+    -->
+</body>
+</html>
