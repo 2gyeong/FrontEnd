@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 초기값 리셋 및 기본 설정 */
+        *{margin: 0; padding: 0;}
+        body{ 
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #444444;
+        }
+        ul{list-style-type: none;
+        }
+        
+        #login_box{
+            width: 220px; height: 120px;
+            border: 1px solid #bbbbbb; 
+            border-radius: 15px;
+            margin: 10px 0 0 18px; /*10px : top, 0:right, 0:bottom, 18px:margin-left*/
+            padding: 10px 0 0 15px;
+        }
+        h2{font-family: "Arial"; 
+            margin-bottom: 10px;
+        }
+
+        #login_box input{   /*후손 선택자(공백)*/
+            width: 100px;
+            height: 18px;   
+        }
+
+        #id_pass, #login_btn{ /*다중 선택자(,)*/
+            display: inline-block;
+            vertical-align: bottom; /* 수직에 대한 정렬 vertical-align : top, middle, bottom */
+        }
+        #id_pass span { /* 후손 선택자 */
+            display: inline-block;
+            width: 20px;
+        }
+        #pass{margin-top: 3px;}
+        #login_btn button{
+            margin-left: 5px;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        #btns{margin: 12px;}
+        #btns li{display: inline;}
+
+        #id_pass2 {margin-left: 5px;}
+        
+    </style>
+</head>
+<body>
+    <div id = "login_box">
+        <h2> Member Login </h2>
+        <ul id = "input_button">
+            <li id = "id_pass">
+                <ul> 
+                    <li><span>ID</span>
+                        <input type="text" name="id">
+                    </li>
+                    <li id ="pass">
+                        <span>PW</span>
+                        <input type="text" name="id">
+                    </li>
+                </ul>
+                
+            </li>
+            <li id = "login_btn"> <button>로그인</button></li>
+        </ul>
+        
+        <ul id = "btns">
+            <li>회원가입</li>
+            <li id ="id_pass2">아이디/비밀번호 찾기</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

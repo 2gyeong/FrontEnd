@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div {
+            position: absolute;
+            border: 1px solid red;
+            width: 20px; height: 20px;
+            border-radius: 10px;
+
+        }
+
+        #b1{right: 10px; background-color: red; animation :bounce; animation-duration: 5s;}
+        #b2{right: 50px; background-color: blue; animation : bounce; animation-duration: 10s;}
+        #b3{right: 90px; background-color: green; animation : bounce; animation-duration: 3s;}
+        #b4{right: 130px; background-color: silver; animation : bounce; animation-duration: 8s;}
+        #b5{right: 170px; background-color: black; animation : bounce; animation-duration: 1s;}
+
+        @keyframes bounce {
+            from, to{bottom: 0px; animation-timing-function: ease-out;
+            } /*시작과 끝점이 동일하다*/
+            50%{bottom: 200px; animation-timing-function: ease-in;}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 오른쪽 하단에 5개의 공을 만들어서 애니메이션 적용 -->
+    <div id = "b1"> </div>
+    <div id = "b2"> </div>
+    <div id = "b3"> </div>
+    <div id = "b4"> </div>
+    <div id = "b5"> </div>
+    
+</body>
+</html>
