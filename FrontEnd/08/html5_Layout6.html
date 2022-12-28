@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #wrap{
+            border: 1px solid red;
+            width: 90%;
+            margin: 0 auto; /* 중앙 정렬 */
+        }
+        header{
+            border: 1px solid red;
+            width: 100%; height: 90px;
+
+        }
+     
+        aside{
+            border: 1px solid red;
+            width: 250px;
+            height: 500px;
+            float: left;
+        }
+        main{
+            border: 1px solid red;
+            width: 100%-250px;
+            height: 500px;
+            margin-left: 250px;
+        }
+        main > div {
+            width: 20%;
+            margin: 10px; height: 100pt;
+            border: 1px solid red;
+            float: left;
+        }
+        footer{
+            border: 1px solid red;
+            width: 100%;
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 부분 유동형 레이아웃 : 화면의 넓이에 따라서 크기가 변화하는 레이아웃
+        width : %, em, rem(배율)
+    -->
+</body>
+<div id = "wrap">
+    <header> 헤더 컨텐츠 </header>
+    <aside> 좌측 컨텐츠 </aside>
+    <main> 메인 컨텐츠 
+        <div> </div>
+        <div> </div>
+        <div> </div>
+    </main>
+    
+    <footer> 푸터 컨텐츠 </footer>
+
+</div>
+
+</html>

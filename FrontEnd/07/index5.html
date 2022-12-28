@@ -41,43 +41,15 @@ window.addEventListener('DOMContentLoaded',()=>{
     includeHTML();
 });
     </script>
-    <style>
-    * {
-    margin:0;
-    padding:0;
-    }
-    body {
-        font-family:"맑은 고딕","돋움";
-        font-size:12px;
-        color:#444444;
-    }
-    ul {
-        list-style-type:none;
-    }
-    .clear {
-        clear:both;
-    }
-
-    #page {
-        width:980px;
-        margin:0 auto;
-    }
-    .line {
-        margin-top:25px;
-        border-top:solid 1px #cccccc;
-    }
-
-    </style>
 </head>
 <body>
-    <div id = page>       <!-- JavaScript를 사용해서 외부 파일을 include-->
-       <div data-include="header.html"></div>
-       <div data-include="main.html"></div>
-       <div data-include="footer.html"></div>
-    <script>
-           includeHTML()
-       </script>
-    </div>
-
+    <!-- JavaScript를 사용해서 외부 파일을 include-->
+    <div data-include="header.html"></div>
+    <div data-include="main.html"></div>
+ 
+ <script>
+        includeHTML()
+    </script>
+    
 </body>
 </html>

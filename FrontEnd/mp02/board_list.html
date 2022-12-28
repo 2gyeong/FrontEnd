@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #page {width: 980px;}
+        body{ 
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #444444;
+        }
+        div{float: left;}
+        li{list-style-type: none;}
+        #clear {clear: both;}
+        header{width: 980px; height: 80px;}
+        aside{width: 180px; height : 800px; 
+            float: left;
+            padding: 5px 5px 5px 5px;
+            float: left;}
+        main{width: 780px; height : 800px; float: left;}
+        footer{width: 980px; height: 100px;
+            float: left;
+            border-top : 1px solid rgb(184, 184, 184);
+            }
+    
+        header li {
+            list-style-type: none;
+            float: left;
+            margin: 5px 35px 0px 35px;
+            padding-left: 5px;
+            font-size: 15px;
+            color: white;
+        }
+        header #logo {
+            margin: 5px 20px 5px 20px;
+            float: left;}
+        header #menu {
+            width: 755px; height: 35px;
+            background-image : url('img/main_menu_bg.png');
+            background-repeat: no-repeat;
+            float: left;
+            margin: 30px 0 0 0;
+        }
+
+        /*aside*/
+        aside #login_box {
+            width: 180px; height: 130px;
+            margin: 0 0 10px 0;
+            border: 1px solid rgba(243, 243, 243, 0.205);
+            background-color: rgb(243,243,243);
+            border-radius: 10px;
+
+        }
+        aside #ttl_login {margin: 10px 5px 10px 10px;}
+        aside #login_box input{ 
+            margin: 1px 0 1px 15px;
+            width: 90px;
+            height: 18px;
+            float: left;
+        }
+        aside #login_bt {
+            display: inline;
+            padding: 2px;}
+            main aside #btns {
+            margin: 10px 0 10px 0;
+        }
+        aside #btns li {
+            display: inline;
+            float: center;
+        }
+        aside #sub_menu{
+            width: 200px; height: 340px;
+            background-image : url('img/sub_menu_bg.png');
+            background-repeat: no-repeat;
+        }
+        aside #sub_menu ul {
+            margin: 90px 0 0 20px;
+        }
+        aside #sub_menu li{
+            margin-top: 15px;
+        }
+
+
+        aside #banner {
+            width: 180px; height: 160px;
+            border: 1px solid rgba(59, 58, 58, 0.205);
+            border-radius: 10px;
+        }
+        
+        main section {
+            margin: 10px 10px 10px 10px;
+        }
+        main article{
+            margin: 20px 10px 10px 20px;
+        }
+
+        main h3 {
+            color: #444444;
+            font-size: 14pt;
+            margin-bottom: 5px;
+        }
+
+        main h4 {
+            color: #444444;
+            font-size: 9pt;
+        }
+
+        main div{
+            float: right;
+        }
+
+        main table{
+            text-align: center;
+            width: 800px; height: 200px;
+        }
+
+        footer article{
+            margin-top: 10px;
+            margin-left: 200px;
+            float: left;
+        }
+
+        footer article div{
+            margin-left: 20px;
+            float: left;
+        }
+
+        footer #company_info {
+            padding: 10px 0 0 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id = "page">
+    <header>
+    <div id = "logo">
+    <img src="img/logo.png">
+    </div>
+    <div id ="menu">
+        <ul>
+            <li>자유 게시판</li>
+            <li>기타 연주</li>
+            <li>공통 구매</li>
+            <li>연주회 안내</li>
+            <li>회원 게시판</li>
+        </ul>
+    </div>
+    </header>
+
+    <aside>
+        <div id="login_box">
+            <ul id ="login_button">
+            <img id = "ttl_login" src="img/ttl_login.png">
+            <input type="text" name="id">
+            <input type="text" name="pwd">
+            <li id="login_bt">
+                <img src="img/btn_login.gif"> 
+            </li>
+            </ul>
+            
+            <ul id="btns">
+                <li><img src="img/btn_join.gif"></li>
+                <li><img src="img/btn_search.gif"></li>
+            </ul>
+        </div>
+
+        <div id ="sub_menu">
+            <ul>
+                <li> + 자유 게시판 </li>
+                <li> + 방명록 </li>
+                <li> + 공지사항 </li>
+                <li> + 등업 요청 </li>
+                <li> + 포토 갤러리 </li>
+            </ul>
+        </div>
+
+        <div id = "banner">
+            <img src="img/banner1.png">
+            <img src="img/banner2.png">
+            <img src="img/banner3.png">
+        </div>
+        
+    </aside>
+
+    <main>
+        <section>
+            <img src="img/comm.gif">
+        </section>
+        <article>
+
+            <h3> 자유 게시판 </h3>
+            <hr>
+            <h4>총 5개의 게시물이 있습니다.</h4>
+  
+            <div>
+            <img src="img/select_search.gif">
+
+            <img src="img/search_button.gif">
+            </div>
+        </article>
+        <table>
+            <tr><td><img src="img/list_title1.gif" width = "30" height = "18"></td>
+                <td><img src="img/list_title2.gif" width = "30" height = "18"></td>
+                <td><img src="img/list_title3.gif"></td>
+                <td><img src="img/list_title4.gif"></td>
+                <td><img src="img/list_title5.gif"></td></tr>
+            <tr><td>1</td><td>까스릉님의 선물인 보드카가 정말 독하네요!!!</td><td>루바토</td><td>2017-09-20</td><td>15</td></tr>
+            <tr><td>2</td><td>까스릉님의 선물인 보드카가 정말 독하네요!!!</td><td>루바토</td><td>2017-09-20</td><td>15</td></tr>
+            <tr><td>3</td><td>까스릉님의 선물인 보드카가 정말 독하네요!!!</td><td>루바토</td><td>2017-09-20</td><td>15</td></tr>
+        </table>
+        
+
+
+    </main>
+
+    <footer>
+
+        <article>
+            <div>
+            <img src = "img/logo_footer.gif">
+            </div>
+            <div>            
+            <ul id="company_info">
+                <li>서울시 강남구 삼성동 1234 우 123-1234</li>
+                <li>TEL : 031-123-1234 email@domain.com</li>
+                <li>COPYRIGHT (C) 루바토 ALL RIGHT RESERVED</li>
+            </ul>
+           </div>
+        </article>
+
+        <article>
+            <div id="icons" >
+				<img src="img/facebook.gif">
+				<img src="img/blog.gif">
+				<img src="img/twitter.gif">
+			</div>
+        </article>
+    </footer>
+
+</div>
+</body>
+</html>
