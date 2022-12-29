@@ -1,0 +1,191 @@
+* {margin: 0; padding: 0;}
+a {text-decoration-line: none;}
+a:visited{color: white;}
+
+#page {width: 980px;}
+body{ 
+    font-family: "맑은 고딕", "돋움";
+    font-size: 12px;
+    color: #444444;
+}
+div{float: left;}
+li{list-style-type: none;}
+#clear {clear: both;}
+header{width: 980px; height: 80px;}
+aside{width: 180px; height : 800px; 
+    float: left;
+    padding: 5px 5px 5px 5px;
+    float: left;}
+main{width: 780px; height : 800px; float: left;}
+footer{width: 980px; height: 100px;
+    float: left;
+    border-top : 1px solid rgb(184, 184, 184);
+    }
+
+header li {
+    list-style-type: none;
+    float: left;
+    margin: 5px 35px 0px 35px;
+    padding-left: 5px;
+    font-size: 15px;
+    color: white;
+}
+header #logo {
+    margin: 5px 20px 5px 20px;
+    float: left;}
+header #menu {
+    width: 755px; height: 35px;
+    background-image : url('../img/main_menu_bg.png');
+    background-repeat: no-repeat;
+    float: left;
+    margin: 30px 0 0 0;
+}
+
+/*aside*/
+aside #login_box {
+    width: 180px; height: 130px;
+    margin: 0 0 10px 0;
+    border: 1px solid rgba(59, 58, 58, 0.205);
+    background-color: rgb(243,243,243);
+    border-radius: 10px;
+
+}
+aside #ttl_login {margin: 10px 5px 10px 10px;}
+aside #login_box input{ 
+    margin: 1px 0 1px 15px;
+    width: 90px;
+    height: 18px;
+    float: left;
+}
+aside #login_bt {
+    display: inline;
+    padding: 2px;}
+    main aside #btns {
+    margin: 10px 0 10px 0;
+}
+aside #btns li {
+    display: inline;
+    float: center;
+}
+aside #sub_menu{
+    width: 200px; height: 340px;
+    background-image : url('../img/sub_menu_bg.png');
+    background-repeat: no-repeat;
+}
+aside #sub_menu a {
+    color: #444444;
+}
+
+aside #sub_menu ul {
+    margin: 90px 0 0 20px;
+}
+aside #sub_menu li{
+    margin-top: 15px;
+}
+
+
+aside #banner {
+    width: 180px; height: 160px;
+    border: 1px solid rgba(59, 58, 58, 0.205);
+    border-radius: 10px;
+}
+
+main section {
+    margin: 10px 10px 10px 10px;
+}
+main article{
+    margin: 20px 10px 10px 20px;
+}
+main article div{
+    float: right;
+}
+
+main h3 {
+    color: #444444;
+    font-size: 14pt;
+    margin-bottom: 5px;
+}
+
+main h4 {
+    color: #444444;
+    font-size: 9pt;
+}
+
+main article div{
+    margin: 10px 0 10px 0 ;
+    float: left;
+}
+main article #search {
+    float: right;
+    vertical-align:middle;
+    display: flex;
+    align-items: center;
+}
+main article #search img {margin-left:5px ; margin-right: 5px;}
+main article select{margin-right: 5px;}
+main #search_text{width: 100px;}
+
+main table{
+    text-align: center;
+    width: 750px; height: 150px;
+    border: 2px solid #a8a8a8;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0 20px 0 20px;
+    border-collapse : collapse;
+}
+main table #tb_h {
+    margin: 0 0 0 0;
+    height: 30px;
+    background-color: rgb(243,243,243);
+}
+main table .tb_t1{
+    float: left;
+    margin: 5px;
+    text-align: left;
+}
+main table .tb_t2{
+    float: right;
+    margin: 5px;
+    text-align: left;
+}
+
+main table .tb_content td{
+    float: left;
+    margin: 5px;
+}
+main table .tb_commnet{
+    border-top: 1px solid #a8a8a8;;
+    background-color: rgb(243,243,243);
+}
+main table .tb_commnet td img {
+    float: left; 
+    margin: 10px 10px 20px 10px;}
+main table td {
+    display: inline-table;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+main #page_button{
+    position: relative;
+    left: 300px;
+}
+main #list_write_button{float: right;}
+main li {margin : 5px ; float: left;}
+
+footer article{
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+footer article div{
+    margin-left: 20px;
+    float: left;
+}
+
+footer #company_info {
+    padding: 10px 0 0 0;
+}

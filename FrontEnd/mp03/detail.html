@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        a {text-decoration-line: none; }
+        .wrapper {
+            width: 1080px;
+        }
+        body{background-color: #f2f0f0;
+            font-family: "맑은 고딕";
+            font-size: 12px;
+            color: #444444;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        #clear {
+            border: 0;
+            clear: both;
+        }
+        
+        header #logo {
+            float: left; 
+            padding: 30px 0 0px 70px; 
+         }
+
+        header #search {
+            display: inline-block;
+            margin: 40px 0 0 100px;
+        }
+        header #search li{
+            color: rgb(150,193,31);
+            margin-left: 10px;
+            float: left;
+            font-weight: 700;
+        }
+        header #top_menu {
+            float: right;
+            margin: 50px 0 0 30px; 
+        }
+
+        header #top_menu li {
+            display: inline;
+            margin : 0 10px 0 10px;
+        }
+
+        header #top_menu .top_menu_f{
+            color: rgb(150,193,31);
+            font-weight: 700;
+        }
+        header #main_menu {
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #4e4c4d;
+            margin-top: 15px;
+            padding: 12px;
+            text-align: center;
+        }
+        header #main_menu li {
+            display: inline;
+            padding: 0 50px 0 50px;
+        }
+
+        aside div {
+            float: left;
+            margin: 20px 0 0 25px;
+            border: 1px solid #a8a8a8;
+        }
+        aside #side_menu{
+            float: left;
+            margin: 20px 0 10px 50px;
+            width: 210px; height: 365px;
+            border: 1px solid #a8a8a8;
+        }
+
+        aside h4{
+            background-color: rgb(150,193,31);
+            color: white;
+            text-align: center;
+            padding: 10px 0 10px 0;
+        }
+        aside li {
+            border-bottom: 1px solid rgb(184, 184, 184);
+            padding: 7px 0 6px 20px;
+            font-weight: 700;
+        }
+
+
+
+        footer {            
+            width: 1080px; height: 200px;
+            margin-left: 50px;
+            float: left;
+        }
+        footer #bottom_menu{
+            width: 1060px;
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #4e4c4d;
+            margin-top: 15px;
+            padding: 12px;
+            text-align: center;
+        }
+        footer #bottom_menu li{
+            margin-right: 10px;
+        }
+        footer ul{
+            float: left;
+            display: inline;
+            padding: 20px 50px 0 100px;
+        }
+
+        footer li {
+            display: inline;
+            padding: 0 10px 0 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+    <div class="wrapper">
+    <div id = "logo">
+        <a href="index.html"><img src = "img/logo.gif"></a>
+    </div>
+
+        <ul id = "search">
+            <li>SEARCH</li>
+            <li><input id ="search_text" type="search_text" name="search_text" style="border: none; width:100px; background: transparent; border-bottom : 1.5px solid #acaaaa;" ></li>
+            <li><img src="img/btn_search.gif"></li>
+        </ul>
+    
+        <ul id = "top_menu">
+            <li class="top_menu_f"> 로그인 </li>
+            <li class="top_menu_f"> 회원가입 </li>
+            <li> 주문배송조회</li>
+            <li><a href="cart.html" style="color: #444444;">장바구니</a></li>
+            <li> 고객센터 </li>
+        </ul>
+
+
+    <div id = "clear"></div>
+
+    <ul id = "main_menu">
+        <li><a href="detail.html" style="color:white;">상세 페이지</li></a>
+        <li><a href="cart.html" style="color:white;">장바구니</a></li>
+        <li>고객 갤러리</li>
+        <li>주문 배송</li>
+        <li>자주 하는 질문</li>
+    </ul>
+</div>
+</header>
+
+<aside>
+    <div id = "side_menu">
+        <h4> CATEGORY ITEM</h4>
+        <ul>
+            <li>생활아트</li>
+            <li>캔버스 아트</li>
+            <li>사진 벽지</li>
+            <li>창문형/현관문형</li>
+            <li>포인트 벽지</li>
+            <li>세계지도</li>
+            <li>앤티크 세계지도 벽지</li>
+            <li>입체 세계지도 벽지</li>
+            <li>어린이방 세계지도</li>
+            <li>족자형 세계지도</li>
+            <li>맞춤제작 결제창</li>
+        </ul>
+    </div>
+    <div id ="clear"></div>
+    <div><img src="img/customer.png"></div>
+</aside>
+
+<main>
+    <div class="wrapper">
+    <article>
+        
+    </article>
+
+    
+</div>
+</main>
+    
+<footer>
+    <div class="wrapper">
+        <ul id ="bottom_menu">
+            <li>회사소개</li>
+            <li>이용안내</li>
+            <li><a href="cart.html" style="color: white;">장바구니</a></li>
+            <li>주문조회</li>
+            <li>적립금</li>
+            <li>이용약관</li>
+            <li>개인정보보호정책</li>
+            <li>고객센터</li>
+        </ul>
+        <ul>
+            <li><img src="img/footer_logo.gif"></li>
+            <li><img src="img/address.gif"></li>
+            <li><img src="img/footer_banner_01.gif"></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
