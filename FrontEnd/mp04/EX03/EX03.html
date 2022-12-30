@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        html,
+        body{height: 100%;}
+        li{list-style-type: none; float: left;}
+        a{text-decoration: none;}
+        a:visited{color: white;}
+        #container {
+            width: 100%; height: 100%;
+            display: flex; 
+            flex-direction: column;
+            justify-content: flex-start; 
+            align-items: center;
+            text-align: center;
+            }
+        header {
+            width: 100%; height: 10%;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        header div {
+            color: white;
+            font-size: 20pt;
+            font-weight: bold;
+        }
+        nav {
+            width: 100%; height: 5%;
+            background-color: rgb(233, 171, 241);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav ul{margin-left: 30px;  width: 100%;}
+        nav li {
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+            justify-content: space-between;
+            margin-right: 10%;
+        }
+        main {
+            width: 100%; height: 40%;
+            background-color: gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main div{width: 80%;}
+
+        main table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        main p {
+            font-size: 15pt;
+            font-weight: bold;
+            border: none;
+            padding: 20px;
+        }
+
+        main table th, td {
+            border: 1px solid gray;
+            font-weight: bold;
+        }
+        footer{
+            width: 100%; height: 5%;
+            background-color: aquamarine;
+            background:linear-gradient(to right, rgb(47, 0, 255), rgb(175, 186, 235)) ;
+            color: white;
+            font-size: 13pt;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "container">
+    <header>
+        <div>쇼핑몰 회원관리 VER 1.0</div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="EX03.html">회원등록</a></li>
+            <li>회원목록조회/수정</li>
+            <li>회원매출조회</li>
+            <li>홈으로</li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <p>쇼핑몰 회원 등록</p>
+        <table border="1">
+            
+            <tr><th style="width : 60vw;">회원번호(자동발생)</th><th style="width : 40vw; text-align: left;"><input type="text"></th></tr>
+            <tr><td>회원성명</td><td  style="text-align: left;" ><input type="text"></td></tr>
+            <tr><td>회원주소</td><td style="text-align: left;"><input type="text"></td></tr>
+            <tr><td>가입일자</td><td style="text-align: left;"><input type="text"></td></tr>
+            <tr><td>고객등급[A:VIP,B:일반,C:직원]</td><td style="text-align: left;"><input type="text"></td></tr>
+            <tr><td>도시코드</td><td style="text-align: left;"><input type="text"></td></tr>
+            <tr><td colspan="2"><input type="submit" value="등록">
+                <input type="button" value="조회"></td></tr>
+        </table>
+    </div>
+    </main>
+   
+    <footer>
+        <section>
+            <div>HRDKOREA Copayright@2016 ALL right reserve. Human Resources Development Service of Korea</div>
+        </section>
+    </footer>
+    </div>
+</body>
+</html>
