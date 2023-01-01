@@ -1,0 +1,166 @@
+
+        * {margin: 0; padding: 0;}
+        a {text-decoration-line: none; }
+        .wrapper {
+            width: 1080px;
+        }
+        body{background-color: #f2f0f0;
+            font-family: "맑은 고딕";
+            font-size: 12px;
+            color: #444444;
+        }
+        aside {
+            width: 270px; height: 1000px;
+            float: left;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        #clear {
+            border: 0;
+            clear: both;
+        }
+        
+        header #logo {
+            float: left; 
+            padding: 30px 0 0px 70px; 
+         }
+
+        header #search {
+            display: inline-block;
+            margin: 40px 0 0 100px;
+        }
+        header #search li{
+            color: rgb(150,193,31);
+            margin-left: 10px;
+            float: left;
+            font-weight: 700;
+        }
+        header #top_menu {
+            float: right;
+            margin: 50px 0 0 30px; 
+        }
+
+        header #top_menu li {
+            display: inline;
+            margin : 0 10px 0 10px;
+        }
+
+        header #top_menu .top_menu_f{
+            color: rgb(150,193,31);
+            font-weight: 700;
+        }
+        header #main_menu {
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #4e4c4d;
+            margin-top: 15px;
+            padding: 12px;
+            text-align: center;
+        }
+        header #main_menu li {
+            display: inline;
+            padding: 0 50px 0 50px;
+        }
+
+        aside div {
+            float: left;
+            margin: 20px 0 0 25px;
+            border: 1px solid #a8a8a8;
+        }
+        aside #side_menu{
+            float: left;
+            margin: 20px 0 10px 50px;
+            width: 210px; height: 365px;
+            border: 1px solid #a8a8a8;
+        }
+
+        aside h4{
+            background-color: rgb(150,193,31);
+            color: white;
+            text-align: center;
+            padding: 10px 0 10px 0;
+        }
+        aside li {
+            border-bottom: 1px solid rgb(184, 184, 184);
+            padding: 7px 0 6px 20px;
+            font-weight: 700;
+        }
+
+        main .box {
+            float: left;
+            width: 750px; height: 430px;
+        }
+        main .box div{
+            padding: 10px 0 10px 10px;
+            float: left;}
+        main .t1{
+            width: 300px; height: 150px;
+            border-collapse : collapse;}
+        main .t1 td{padding: 3px;}
+        
+        main .t2 {
+            width: 680px; height: 200px;
+            background-color: white;
+            border: 2px solid #4e4c4d;
+            padding: 30px;
+            margin-left: 20px;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        main .t2 td {
+            padding: 8px;
+            border-bottom: 1px solid #afafaf;
+        }
+
+        main hr {
+            width: 700px;
+            border: 1px solid #4e4c4d;
+        }
+        main p1 { font-size : 15px ;color: rgb(145, 179, 123); font-weight: 600;}
+        main p2 { font-size : 15px ; font-weight: 600;}
+        main p3 { font-size: 20px; font-weight: bold; margin-left: 30px;}
+
+        main .box3{
+            float: left;
+            width: 750px; 
+            height: 250px;
+        }
+        main ul {
+            font-size: 10pt;
+            font-weight: bold;
+            margin: 20px;
+        }
+        main li {
+            margin-left: 20px;
+        }
+
+        footer {            
+            width: 100%; height: 200px;
+            float: left;
+        }
+        footer #bottom_menu{
+            width: 100%;
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #444444;
+            margin-top: 15px;
+            padding: 12px 0 12px 0;
+            text-align: center;
+        }
+        footer #bottom_menu li{
+            margin-right: 10px;
+        }
+        footer ul{
+            float: left;
+            display: inline;
+            padding: 20px 50px 0 100px;
+        }
+
+        footer li {
+            display: inline;
+            padding: 0 10px 0 10px;
+        }
