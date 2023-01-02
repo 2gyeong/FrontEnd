@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        a {text-decoration-line: none;}
+        a:visited{color: white;}
+
+        #page {width: 100vw;}
+        body{ 
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #444444;
+        }
+        div{float: left;}
+        .clear{clear: both;}
+        ul {list-style-type: none; float: left;}
+        .topmenu {float: right;}
+        .topmenu li { float :left; margin-left: 15px;}
+        .menu > li{
+            float: left;
+        }
+        .menu {
+            width: 800px;
+            overflow: hidden;
+            margin: 150px auto;
+            }
+        .submenu > li {
+        line-height: 50px;
+        background-color: #dddfe7;
+        }
+        .submenu {
+        height: 0; /*ul의 높이를 안보이게 처리*/
+        overflow: hidden;
+        }
+        .menu > li:hover{
+            background-color: #dddfe7;
+            transition-duration: 0.5s;
+        }
+        .menu > li:hover .submenu {
+            height: 500px; /*서브메뉴 li한개의 높이 50*5*/
+            transition-duration: 1s;}
+        .menu > li:hover .submenu >li {
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <head>
+        <div class ="topmenu">
+            <ul>
+                <li>로그인</li>
+                <li>|</li>
+                <li>회원가입</li>
+                <li>|</li>
+                <li>장바구니</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div id ="logo">
+            <img src="img/main_menu01.png"></img>
+        </div>
+        <nav>
+            <ul class ="menu">
+                <li> <a href="#">카테고리</a>
+                    <ul class="submenu">
+                        <li><a href="#"><img src="img/main_menu01.png"></img>외장관리</a></li>
+                        <li><a href="#"><img src="img/main_menu03.png"></img>세차도구</a></li>
+                        <li><a href="#"><img src="img/main_menu02.png"></img>실내관리</a></li>
+                        <li><a href="#"><img src="img/main_menu04.png"></img>광택/전문가용</a></li>
+                        <li><a href="#"><img src="img/main_menu05.png"></img>공구류</a></li>
+                        <li><a href="#"><img src="img/main_menu06.png"></img>자동차용품</a></li>
+                        <li><a href="#"><img src="img/main_menu07.png"></img>기타</a></li>
+                    </ul>
+                </li>
+                <li>이벤트</li>
+                <li>공지사항</li>
+                <li>자유게시판</li>
+
+            </ul>
+            
+
+        </nav>
+    </head>
+</div>
+
+</body>
+</html>

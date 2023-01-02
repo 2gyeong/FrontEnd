@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 변수명 재선언 시 데이터 값 변화 살펴보기-->
+    <script>
+        // var 키워드를 생략해서 값을 할당할 수 있다.
+        // 변수를 재선언 시 기존 변수의 값이 그대로 출력된다.
+        
+        stuName = "홍길동"; //var 키워드를 생략
+        comGrade = 96;
+
+        var stuName ; // 변수를 var를 사용해서 재선언
+        var comGrade; //변수명을 재선언
+
+        document.write("학생이름 : "+stuName+"<br>");
+        document.write("컴퓨터 점수 : " + comGrade + "<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var text;
+        var week = new Date().getDay();
+        switch(week){
+            case 1: //월
+            case 2: //화
+                text="HTML5";
+            case 3: //수
+            case 4: //목
+                text="자바스크립트";
+            case 5: //금
+            case 6: //토
+                text="영어";
+                break;
+            case 0: //일
+            default:
+                text="수영";
+
+        }
+        document.write("오늘은 <b>"+text+"</b> 학습하는 날입니다. <p/>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

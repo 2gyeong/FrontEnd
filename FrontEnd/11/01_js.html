@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트가 작동되는 순서</title>
+    <script>
+        var num=0;
+        document.write("head 태그 내의 실행 순서"+num+"<br />");
+        console.log("콘솔 출력 : "+num);
+    </script>
+    <script>
+        var num2 = 1;
+        document.write("head 태그 내의 실행 순서" + num + "<br />");
+        console.log("콘솔 출력 : " + num);
+    </script>
+</head>
+<body>
+    <!-- Java와 JavaScript는 완전히 다른 언어이다. 
+            - Java : Language(언어), 컴파일을 해서 출력
+            - JavaScript : 컴파일을 하지 않는 인터프린터 언어이다.
+                - 웹 브라우저에서 코드를 해석할 수 있는 해석기가 해석해서 출력
+                HTML 태그 내에서 <head> ~ <head>, <body> ~ <body> 블락 내에
+                    <script> Javascript </script>
+                    <script src = "외부의 자바스크립트"> </script>
+
+        var 변수명 = 값 ; var는 자바스크립트의 모든 타입을 처리
+        ctrl + `
+    -->
+    <script>
+        var num3 = 0;
+        document.write("head 태그 내의 실행 순서"+num+"<br />");
+        console.log("콘솔 출력 : "+num);
+    </script>
+
+    <script>
+        var num4 = 0;
+        document.write("head 태그 내의 실행 순서"+num+"<br />");
+        console.log("콘솔 출력 : "+num);
+</script>
+</body>
+</html>
