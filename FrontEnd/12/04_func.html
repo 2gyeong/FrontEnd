@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 기본 함수와 무명함수의 우선 순위 알아보기
+            -- 무명함수가 호출이 됨
+    -->
+    <script>
+        //무명 함수
+        var printMsg = function(msg){
+        document.write("무명함수 : "+msg+"<br>");
+        }
+
+        //기본 함수
+        function printMsg(msg){
+            document.write("기본함수 : "+msg+"<br>")
+        }
+
+            printMsg("호출되었습니다.")
+
+        result = add('홍길동',10);
+        document.write("결과 : "+ result)+"</p>";
+    </script>
+
+
+    
+    
+</body>
+</html>

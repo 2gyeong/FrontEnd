@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 두 숫자를 인풋받아 더해서 리턴 돌려주는 함수 -->
+    <script>
+        function add (x, y){
+            return x+y;
+        }
+
+        var calsum = add ; //add 함수를 변수에 할당 할 수 있음.
+        var addUP = add; // add 함수를 변수에 할당
+
+        document.write("결과값 : "+ calsum(5,10)+"<br>");
+        document.write("결과값 : "+ addUP(3,20)+"<br>");
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 함수 내부에서 다른 함수 호출 -->
+    <script>
+        // 배열 변수 선언 후 나중에 값 할당.
+        var arrdata=[];
+
+        // 함수를 호출 시 배열의 각 방의 값을 입력
+        function insertArr(){
+            for(var i = 0 ; i <99 ; i++){
+                arrdata[i] = i + 1;
+            }
+            selectArr();
+            addArr();
+        }
+        // 배열의 각 방의 내용을 출력하는 함수
+        function selectArr(){
+            for(var i = 0 ; i <arrdata.length; i++){
+                document.write(arrdata[i] + " ");
+            }
+        }
+
+        // 배열의 각 방의 값을 더하는 함수
+        function addArr(){
+            var sum = 0 ;
+            for(var i = 0 ; i < arrdata.length ; i ++){
+                sum+= arrdata[i];   // sum = sum + arrdata[i]
+            }
+            document.write("<p/> 덧셈의 결과 출력 : "+ sum + "<p/>");
+            document.write("<a href = '21_arr.html'> 되돌아가기 </a>");
+        }
+        
+
+        
+
+    </script>
+   <button type="button" onclick="insertArr()"> 배열 생성/조회/연산 </button>
+</body>
+</html>

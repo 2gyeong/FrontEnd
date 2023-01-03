@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 자바 스크립트에서 함수 선언 : 무명함수
+        -- 선언 전 호출 시에는 에러가 발생
+        -- 선언 후에만 호출 가능
+    -->
+    <script>
+
+        var text1 = "함수 선언 전 호출";
+        var text2 = "함수 선언 후 호출";
+
+        //printMsg(text1);    // 함수 선언 전 호출 // 출력 안 됨
+
+        var printMsg = function(msg){
+            document.write("함수 호출 메세지 : " + msg + "<br>") 
+        }
+        printMsg(text2);    // 함수 선언 후 호출 : 무명함수 일 때
+
+    </script>
+    
+</body>
+</html>

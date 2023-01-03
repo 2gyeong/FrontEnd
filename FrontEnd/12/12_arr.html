@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        배열 선언 후 값 할당
+    -->
+
+    <script>
+        var city = []; // 배열 변수 선언
+        // 배열 각 방에 값을 할당
+        city[0] = "서울";
+        city[1] = "부산";
+        city[2] = "광주";
+        city[3] = "대구";
+        city[4] = "대전";
+
+        // 배열의 각 방의 내용을 순환하면서 출력하는 함수 생성
+        function printArr(){
+            for(var i = 0 ; i<city.length ; i++){
+                document.write("배열 데이터 [ " + i + " ] =" + city[i]+"<br>");
+            }
+        }
+        printArr();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(x,y,z){
+            var sum;
+            //매개변수가 x만 인풋될 때
+            if ((y===undefined)&&(z===undefined)){
+                sum=x;
+            }
+            else if ((z===undefined)){      // 매개변수가 : x, y
+                sum = x + y;
+            } else{
+                sum = x + y + z;
+            }
+            return sum;
+        }
+
+        // 함수호출
+        var r1 = add(2); //2
+        var r2 = add(2,3); //5
+        var r3 = add(4,5,6); //15
+
+        // 출력
+        document.write("함수 인자 부족(1) : "+r1+"<p/>");
+        document.write("함수 인자 부족(2) : "+r2+"<p/>");
+        document.write("정상함수 호출 : "+r3+"<p/>");
+
+    </script>
+</body>
+</html>

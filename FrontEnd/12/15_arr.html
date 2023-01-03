@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var com=[95, 88, ,72 ,68, ,99 ,82 ,78, 87];    // 10명중8명의점수만입력
+    var getAvg ;
+    function printArr() {
+        var i; 
+        var sum=0;
+        var count=0;    // 입력점수카운트변수
+        var n=com.length;
+        document.write( n + "명의점수입력<p/>");
+        for(i=0; i<n; i++) {
+            if(com[i]===undefined) {    // 점수가입력되지않은학생은연산하지않음
+                continue;
+            }
+             else{ sum+=com[i];
+                count++}
+            }
+            document.write("점수를입력한학생: "+ count + "명<p/>");  
+            document.write("총합: "+ sum + "<p/>");  
+            return(sum/count);
+        }
+        getAvg=printArr();
+        document.write("평균: "+ getAvg + "<p/>");  
+    </script>
+    
+</body>
+</html>

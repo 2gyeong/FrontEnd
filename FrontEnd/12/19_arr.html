@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 배열 객체로 선언 후 사용
+            배열을 생성 시 : new Array(생성자)
+        -->
+    <script>
+        // var city = [];
+        // city[0] = "서울"; city[1] = "부산"; city[2] = "인천";
+        // var city = ["서울", "부산", "대구"]
+        var city=newArray("Seoul","Busan","Incheon");
+        function printArr() {
+            var i; 
+            for(i=0; i<city.length; i++) {
+                document.write("배열데이터["+ i + "] = "+ city[i] + "<br>");  
+            }
+        }  
+        printArr();
+    </script>
+</body>
+</html>

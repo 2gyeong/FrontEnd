@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            width: 420px;
+            margin: 0 auto; /*중앙 정렬*/
+        }
+        .row ul { /*자손*/
+            list-style-type: none;
+            margin: 0; padding: 0;
+        }
+        .row ul li {
+            display: inline-table;
+        }
+        #lightbox {
+            position: fixed;    /* 위치 고정 : 스크롤과 상관없이 위치 고정*/
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0, 0.7);
+            top:0; left: 0; /*position : fixed 일 때 Absolute 기준점으로 설정됨*/
+            display: none; /*화면에서 사라짐*/
+        }
+        #lightbox img{
+            position: absolute; /*왼쪽 최상단이 기준점*/
+            top : 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* 정중앙에 위치하도록 설정*/
+            border: 5px solid #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "row">
+        <ul>
+            <li><img src="img/tree-1-thumb.jpg" data-src="img/tree-1.jpg" class="pic"></li>
+            <li><img src="img/tree-2-thumb.jpg" data-src="img/tree-2.jpg" class="pic"></li>
+            <li><img src="img/tree-3-thumb.jpg" data-src="img/tree-3.jpg" class="pic"></li>
+            <li><img src="img/tree-4-thumb.jpg" data-src="img/tree-4.jpg" class="pic"></li>
+            <li><img src="img/tree-5-thumb.jpg" data-src="img/tree-5.jpg" class="pic"></li>
+            <li><img src="img/tree-6-thumb.jpg" data-src="img/tree-6.jpg" class="pic"></li>
+        </ul>
+    </div>
+    <!-- 원본 이미지가 출력될 div -->
+    <div id = "lightbox">
+        <img src="img/tree-1.jpg" alt="" id = "lightboxImage">
+    </div>
+
+    <!-- 자바스크립트 -->
+    <script>
+        // class, id 속성을 가져와서 변수에 할당
+        var pics = document.getElementsByClassName("pic");
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImage=document.getElementById("lightboxImage");
+
+        // for 루프를 돌리면서 썸네일을 클릭 시 함수를 호출하도록
+        for (var i = 0 ; i<pics.length ; i++){
+            pics[i].addEventListener("click", showLightbox);
+                //pics 배열의 i 번째 요소를 클릭 시 showLightbox() 함수를 호출
+        }
+
+        //썸네일을 클릭 시 lightbox img 
+        function showLightbox(){
+            var bicLocation = this.getAttribute("data-src");//data-src의 값을 가져와서 bicLocation 변수에 할당
+            lightbox.style.display = "block"; // 화면에 출력되도록 설정 : display:none => block 
+            lightboxImage.setAttribute("src", bicLocation);
+        }
+
+        //출력된 화면을 클릭 시 다시 원래대로 되돌리는 함수
+        lightbox.onclick = function(){
+            lightbox.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>

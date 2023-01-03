@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 배열에 공백이 들어간 경우 -->
+    <script>
+        var city = ["서울", , "부산", , "인천"];
+        function printArr(){
+             for(var i = 0 ; i <city.length ; i++){
+            document.write("배열 데이터 [ "+i+" ] ="+city[i]+"<br>");
+        }
+    }
+
+    printArr();
+
+    </script>
+</body>
+</html>
