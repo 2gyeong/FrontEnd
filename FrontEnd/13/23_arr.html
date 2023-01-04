@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 값을 넣는 함수
+        var arrdata=[];
+        function insertArr(){
+            for(var i = 0 ; i <100 ; i++){
+                arrdata[i] = i+ 1;
+                document.write(arrdata[i]+" ");
+            }
+            // 배열방의 크기를 출력
+            document.write("<p/> 배열 방의 크기"+ arrdata.length + "<p/>");
+            document.write("<button type = 'button' onclick='delDataArr()'> 모든 값 0을로 초기화 </button> <p/>");
+            document.write("<button type = 'button' onclick='allDelArr()'> 방크기 초기화 </button> <p/>");
+            document.write("<p/><a href = '23.arr.html'>되돌아가기</a>");
+        }
+
+        function selectArr(){
+            for(var i = 0; i < arrdata.length; i++){
+                document.write( arrdata[i]+" ");
+            }
+
+            document.write("<p/> 배열 방의 크기" + arrdata.length + "<p/>");
+            document.write("<p/><a href = '23.arr.html'>되돌아가기</a>");
+        }
+
+        function delDataArr(){
+            for(var i = 0; i < arrdata.length; i++){
+                arrdata[i]=0;
+            }
+            selectArr();
+        }
+        // 배열 방의 모든 값을 초기화 : 배열 방의 크기를 0으로 초기화 :
+        // 자바는 배열의 들어가는 데이터 자료형이 동일해야 한고 방 크기를 늘리거나 줄일 수 없다.
+        // 자바 스크립트는 배열에 여러 자료형을 넣을 수 있고 방크기를 조정할 수 있다.
+        function allDelArr(){
+            arrdata.length =0 ; // 배열 방크기를 초기화
+            selectArr();
+        }
+    </script>
+    <button type="button" onclick="insertArr()"> 배열 데이터 입력 및 출력 </button>
+    <button type="button" onclick="delDataArr()"> 배열 데이터 초기화 </button>
+    <button type="button" onclick="allDelArr()"> 전체 초기화 </button>
+    
+
+</body>
+</html>

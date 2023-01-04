@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style> 
+        body {
+            font-size: 100%;
+        }
+        #a {
+            font-size : 200%; 
+        }
+        #b {
+            font-size : 3em; 
+        }
+    
+    </style>
+<body>
+    <!-- 
+        반응형 : PC, 타블릿, 핸드폰   <== 각 장비의 해상도에 맞도록 반응적으로 
+            페이지를 출력 하는 사이트 제작 
+        
+            px (픽셀) : 고정형으로 작동 
+           - width (넓이) , height (높이) 를 % (), em  (배수) : 글자크기 
+           - head 태그 내부에 viewport 태그가 반드시 들어 있어야 
+                그 장치에 해당되도록 페이지가 반응적으로 작동을 시켜줌 
+    -->
+
+    <!-- Body 내의 기본 출력 -->
+    Hello world 
+
+    <div id = "a" > Hello world  </div>     <!-- % 단위로 출력-->
+    <div id = "b" > Hello world  </div>     <!-- EM 단위로 출력-->
+    
+</body>
+</html>

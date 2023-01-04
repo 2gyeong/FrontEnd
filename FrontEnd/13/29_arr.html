@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var kdata=['서울', '부산', '구포', '대구', '대전']; 
+    
+    var str1=kdata.splice(1, 2);   
+    document.write("삭제데이터: "+ str1 + "<br>");
+    document.write("남은배열: "+ kdata + "<p/>");
+
+    var str2=kdata.splice(1, 1, '강릉', '세종');   
+    document.write("삭제데이터: "+ str2 + "<br>");
+    document.write("남은배열: "+ kdata + "<p/>");
+
+    var str3=kdata.splice(2, Number.MAX_VALUE);    
+    document.write("삭제데이터: "+ str3 + "<br>");
+    document.write("남은배열: "+ kdata + "<p/>");
+    </script>
+</body>
+</html>

@@ -7,35 +7,39 @@
     <title>Document</title>
     <style>
           * {margin: 0; padding: 0;}
+        .container {
+            width: 100%;
+            min-width: 480px;
+            margin: 0 auto;
+            position: relative;
+        }
         a {text-decoration-line: none;}
         a:visited{color: white;}
-
-        #page {width: 100vw;}
         body{ 
             font-family: "맑은 고딕", "돋움";
             font-size: 12px;
             color: #444444;
         }
-        div{float: left;}
         .clear{clear: both;}
-        ul {list-style-type: none; float: left;}
-        .top {float: right;}
-        .top li { float :left; margin-left: 15px;}
-        .main li{
-            float: left;
+        ul, li, ol {list-style-type: none; }
+        #event_img {
+            display: flex;
+            justify-content: center;
         }
+
     </style>
 </head>
 <body>
+    <div class="container">
     <main>
         <div id = "event_img">
-
+            <img src="img/event.jpg">
         </div>
         <div id ="best_item">
 
         </div>
         <div id ="youtube"></div>
     </main>
-    
+    </div>
 </body>
 </html>

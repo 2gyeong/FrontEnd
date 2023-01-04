@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -shift 메소드: 배열의맨처음위치에데이터를삭제하고배열의길이반환
+        // -unshift 메소드: 배열의맨처음위치에데이터를삽입하고배열의길이반환
+    var kdata=['서울', '부산']; 
+    var p1=kdata.unshift('청주', '세종');   
+    document.write("데이터: "+ p1 + "<br>");    
+    document.write("배열데이터: "+ kdata + "<p/>");
+    var p2=kdata.shift();    
+    document.write("데이터: "+ p2 + "<br>");   
+    document.write("배열데이터: "+ kdata + "<p/>");
+    </script>
+</body>
+</html>

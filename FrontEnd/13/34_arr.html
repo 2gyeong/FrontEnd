@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // map : 배열의 데이터를 함수의 인자로 전달하고 함수의 수행결과를 반환 받아 새로운 배열 생성 
+    var data=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+    function mapArr(value) {
+        return value*value;          
+    }
+    var mapdata=data.map(mapArr);    
+    document.write("원래배열:"+ data + "<p/>");
+    document.write("map 메소드적용배열:"+ mapdata + "<p/>");
+    </script>
+</body>
+</html>
