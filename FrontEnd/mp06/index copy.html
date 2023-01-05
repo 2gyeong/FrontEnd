@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0px; padding: 0;}
+        li {list-style-type: none;}
+        .container {
+            width: 100%;
+            min-width: 480px;
+            margin: 20px 0 0 50px;
+        }
+        h1 {
+            margin: 20px;
+        }
+        div { float: left;}
+        .clear {clear: both;}
+        #lightbox {     
+            width: 300px; height: 300px;
+        }
+
+        #lightbox img {
+            width: 19em;
+        }
+
+        .pic {
+            width: 70px; height: 70px;
+        }
+        .row li{
+            display: inline-block;
+            margin: 1em;
+        }
+
+        button {
+            width: 300px; height: 40px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h4{
+            color: blue;
+            margin: 20px;
+        }
+        #detail {
+            display: none;
+            margin-top: 100px;
+            margin-left: 30px ;
+        }
+        span ul { margin-top: 30px;}
+        span li {
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class ="container">
+        <div>
+        <h1> 에디오피아 게뎁 </h1>
+        <div id = "lightbox">
+                <img src="img/coffee-pink.jpg" alt="에디오피아 게뎁" id="cup" width="200px">
+        </div>
+            <div class="clear"></div>
+            <div class="row">
+                <ul>
+                    <li><img src="img/coffee-pink.jpg" data-src="img/coffee-pink.jpg" class="small" ></li>
+                    <li><img src="img/coffee-blue.jpg" data-src="img/coffee-blue.jpg" class="small"></li>
+                    <li><img src="img/coffee-gray.jpg" data-src="img/coffee-gray.jpg" class="small"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <a href="#" id="view">상세 설명 보기</a>
+            <ul>
+                <li> 상품명 : 에티오피아 게뎁</li>
+                <li style="color: blue;"> 판매가 : 9,000원 </li>
+                <li> 배송비 : 3,000원 </li>
+                <li> (50,000원 이상 구매시 무료) </li>
+                <li> 적립금 : 180원(2%)</li>
+                <li> 로스팅 : 2019.06.17</li>
+            </ul>
+
+            <button type="button">장바구니 담기</button>
+
+        </div>
+
+        <div id="detail">
+            <a href="#" id="view">상세 설명 보기</a>
+            <ul>
+                <li> 상품명 : 에티오피아 게뎁</li>
+                <li style="color: blue;"> 판매가 : 9,000원 </li>
+                <li> 배송비 : 3,000원 </li>
+                <li> (50,000원 이상 구매시 무료) </li>
+                <li> 적립금 : 180원(2%)</li>
+                <li> 로스팅 : 2019.06.17</li>
+            </ul>
+
+            <button type="button">장바구니 담기</button>
+
+        </div>
+
+
+         
+ 
+    </div>
+
+    <!-- 자바스크립트 -->
+    <script> 
+        /* querySelector() : css - id : #, class : .
+        getElementByID() : 태그 내부에 적용된 id
+        getElemntByClassName() : 태그 내부에 적용된 class
+        
+        엘리멘트(태그)의 속성값을 변경할 때 : 객체.setAttribute를 사용함. id 속성에만 적용되어있다.
+            class 속성에는 setAttrubute가 없다.
+
+        */
+
+        /* DOM 객체를 생성 */
+        var cup = document.querySelector("#cup");
+        var smallPics = document.querySelectorAll(".small");
+        var view = document.getElementById("view");
+        var detail = document.getElementById("detail");
+    
+        for ( let i = 0 ; i < smallPics.length; i++) {
+            smallPics[i].addEventListener("click", changePic); 
+        }
+        function changePic(){
+            var newPic = this.src;
+            cup.setAttribute("src", newPic);
+        }
+    
+    
+        view.onclick= function(){
+            detail.style.display = "block";
+        }
+        detail.onclick = function(){
+            detail.style.display = "none";
+        }
+        
+    </script>
+</body>
+</html>
+

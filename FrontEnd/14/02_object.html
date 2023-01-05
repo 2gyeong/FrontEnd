@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 객체의 함수 사용하기 -->
+    <p id = "msg1"></p>
+    <p id = "msg2"></p>
+    <p id = "msg3"></p>
+    <script>
+        // obj 객체 : 속성 + 함수(메소드)
+        var obj = {
+            m1:function(){      //인풋 매개 변수 없음
+                return "Hello Sonata";
+            }, 
+            m2:function(a){      //인풋 매개 변수를 1개 가짐
+                var result = a;
+                return result ;
+            },    
+            m3:function(a, b){      //인풋 매개 변수를 2개 가짐
+                return a+b;
+            }     
+        };
+
+        // 함수 호출 : obj.m1();
+        document.getElementById("msg1").innerHTML = obj.m1();
+        document.getElementById("msg2").innerHTML = obj.m2(100);
+        document.getElementById("msg3").innerHTML = obj.m3(100, 200);
+    </script>
+</body>
+</html>

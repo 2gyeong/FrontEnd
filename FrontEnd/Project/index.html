@@ -6,14 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사이트 이름</title>
     <script src="js/includ.js"></script>
+    <link rel="stylesheet" type="text/css" href="header.html">
+    <link rel="stylesheet" type="text/css" href="main.html">
     <style>
+        
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        body{ 
+            font-family: "맑은 고딕", "돋움";
+            font-size: 12px;
+            color: #222222;
+            text-align: center;
+        }
+        header {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid red;
+        }
+        main{
+            margin-top: 70px;
+        }
     </style>
 
 </head>
 <body>
     <div class="container">
-    <div data-include="header.html"></div>
-    <div data-include="main.html"></div>
+        <header><div data-include="header.html"></div></header>
+        <main><div data-include="main.html"></div></main>
     <div data-include="footer.html"></div>
 </div>
     

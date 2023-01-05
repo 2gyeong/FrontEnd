@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id ="carname"></div>
+    <div id ="carcolor"></div>
+    <div id="carspeed"></div>
+
+    <script>
+        var car = new Object (); // 객체 선언
+        // 객체의 속성과 메소드 부여
+        car.name = 'Sonata';
+        car.speed = 100;
+        car.color = 'blue';
+        car.speedup = function(){
+            return this.speed + 10;
+        };
+
+        //객체의 속성과 메소드를 호출해서 div 태그에 할당
+        var cname = document.getElementById("carname");
+        var colname = document.getElementById("carcolor");
+        var cspeed = document.getElementById("carspeed");
+
+        cname.textContent = '자동차 이름 : ' + car.name;
+        colname.innerHTML = '자동차 색깔 : ' + car.speed;
+        cspeed.textContent = '자동차 속도 : '+ car.speedup();
+    </script>
+</body>
+</html>

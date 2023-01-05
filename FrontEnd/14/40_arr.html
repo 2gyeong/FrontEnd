@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data=[];
+        for(var i=0; i<10; ++i) {
+            data[i]=[String(i+"-"+0), String(i+"-"+1), String(i+"-"+2)];
+            }
+        function printData() {
+            for(var x=0; x< data.length; x++) {
+                for(var y=0; y<data[x].length; y++) {
+                    document.write(data[x][y] + " ");
+                    }
+                    document.write("<p/>");
+                    }
+                    document.write("<a href='40_arr.html'>돌아가기</a>");       
+                    }
+    </script>
+    <button type="button" onclick="printData()">전체배열데이터보기</button>
+    
+</body>
+</html>

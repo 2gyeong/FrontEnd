@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
+    <script src="js/slide.js"></script>
     <style>
           * {margin: 0; padding: 0;}
         .container {
@@ -12,6 +13,7 @@
             min-width: 480px;
             margin: 0 auto;
             position: relative;
+            margin-top: 20%;
         }
         a {text-decoration-line: none;}
         a:visited{color: white;}
@@ -22,24 +24,109 @@
         }
         .clear{clear: both;}
         ul, li, ol {list-style-type: none; }
-        #event_img {
+        article {
+            border: 1px solid red;
             display: flex;
             justify-content: center;
+        }
+        .slide-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .slide-box img {
+            max-width: 60%; height: auto;
+            display: block;
+            border-radius: 2%;
+            margin: 2% 2%;
+            /* object-fit: cover; */
+        }
+        article {
+            display: flex;
+            align-items: center;
+        }
+        #best_item {
+            width: 100%; 
+            background-color: #ebecec;
+            border: 0.3px solid #5555550e;
+        }
+        .article_title {
+            color: black;
+            font-size: 200%;
+            font-weight: bold;
+            padding: 5% 0 5% 10% ;
+        }
+        .product {
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            margin-bottom: 2%;
+        }
+        .product_img {  /*Best 상품 이미지 가운데 정렬*/
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5%;
+        }
+        #best_item ul {
+            width: 40%;
+            display: inline-block;
+        }
+        #best_item img {
+            width: 90%;
+            margin-bottom: 5%;
+        }
+
+        #youtube {
+            width: 30%; height: auto;
+            background-color: #ebecec;
+            border-radius: 2%;
+            margin: 5% 10% 10% 2%;
+            padding: 2% 2% 0 2%;
+            color: black;
+            display: block;
+            border: 0.3px solid #5555550e;
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
-    <main>
-        <div id = "event_img">
-            <img src="img/event.jpg">
-        </div>
+        <div class="container">
+        <!-- <div class="slide-container">-->
+        <div class = "slide-box">
+            <img class="slide1" src="img/event1.jpg">
+            <img class="slide1" src="img/event2.jpg">
+            <img class="slide1" src="img/event3.jpg">
+        </div> 
+
         <div id ="best_item">
+            <div class="article_title">Best 상품</div>
+            <div class="product">
+            <ul> 
+                <li class="product_img"><img src="img/product01.jpg"></li>
+                <li style="font-weight: bold;">더클래스 메탈불렛 스프레이 유리막 코팅제 300ml</li>
+                <li style="font-weight: bold;">44,900원</li>   
+            </ul>
+
+            <ul> 
+                <li class="product_img"><img src="img/product01.jpg"></li>
+                <li style="font-weight: bold;">더클래스 메탈불렛 스프레이 유리막 코팅제 300ml</li>
+                <li style="font-weight: bold;">44,900원</li>   
+            </ul>
+            </div>
 
         </div>
-        <div id ="youtube"></div>
-    </main>
-    </div>
+
+        <div id ="youtube">
+            <div class="article_title"> 추천 영상 </div>
+           <iframe 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+            >
+            </iframe>
+        </div>
+
+
 </body>
 </html>
