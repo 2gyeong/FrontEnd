@@ -13,12 +13,10 @@
         a:visited{color: #222222;}
 
         body{ 
-            font-family: "맑은 고딕", "돋움";
             font-size: 12px;
             color: #222222;
             text-align: center;
         }
-        div{float: left;}
         .clear{clear: both;}
         ul, li, ol {list-style-type: none; }
         .topmenu {float: right; margin-top: 30px; margin-right: 40px ;}
@@ -68,26 +66,27 @@
         }
         .submenu {
             box-sizing: border-box;
-            width: 0; margin: 0 auto; 
+            width: 100%; margin: 0 auto; 
             margin-top: 5px;
             box-sizing: border-box;
             display: inline-block;
         }
         .submenu ul {
+            width: 900px;
             display: none;
         }
         .submenu img{
             margin-top: 10px;
         }
         .submenu ul li {
-            width: 140px;
+            width: 130px;
             display: inline-flex;
             justify-content: space-between;
             text-align: center;
         }
 
         .main > li:hover> .submenu{
-            width: 1080px;
+            width: 900px;
             border-radius: 20px;
             background-color: #d7d9df;
             transition-duration: 0.8s; 
@@ -143,5 +142,7 @@
             
 
         </nav>
+    
 </body>
+
 </html>

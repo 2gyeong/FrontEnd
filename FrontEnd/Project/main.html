@@ -5,23 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <script src="js/slide.js"></script>
     <style>
-          * {margin: 0; padding: 0;}
-        .container {
-            width: 100%;
-            min-width: 480px;
-            margin: 0 auto;
-            position: relative;
-            margin-top: 20%;
-        }
+
+        * {margin: 0; padding: 0;}
         a {text-decoration-line: none;}
-        a:visited{color: white;}
         body{ 
             font-family: "맑은 고딕", "돋움";
             font-size: 12px;
             color: #444444;
         }
+        /* 시작 */
         .clear{clear: both;}
         ul, li, ol {list-style-type: none; }
         article {
@@ -46,6 +39,7 @@
         article {
             display: flex;
             align-items: center;
+            border: 1px solid red;
         }
         #best_item {
             width: 100%; 
@@ -54,9 +48,9 @@
         }
         .article_title {
             color: black;
-            font-size: 200%;
+            font-size: 13pt;
             font-weight: bold;
-            padding: 5% 0 5% 10% ;
+            padding: 2% 0 5% 5% ;
         }
         .product {
             display: flex;
@@ -71,30 +65,34 @@
             border-radius: 5%;
         }
         #best_item ul {
-            width: 40%;
+            width: 30%;
             display: inline-block;
         }
+
         #best_item img {
             width: 90%;
             margin-bottom: 5%;
+
         }
 
         #youtube {
-            width: 30%; height: auto;
+            width: 100%; height: auto;
             background-color: #ebecec;
             border-radius: 2%;
-            margin: 5% 10% 10% 2%;
+            margin-top: 5%;
             padding: 2% 2% 0 2%;
             color: black;
             display: block;
             border: 0.3px solid #5555550e;
         }
 
+        iframe {
+            width: 45em;
+        }
+
     </style>
 </head>
 <body>
-        <div class="container">
-        <!-- <div class="slide-container">-->
         <div class = "slide-box">
             <img class="slide1" src="img/event1.jpg">
             <img class="slide1" src="img/event2.jpg">
@@ -111,9 +109,15 @@
             </ul>
 
             <ul> 
-                <li class="product_img"><img src="img/product01.jpg"></li>
-                <li style="font-weight: bold;">더클래스 메탈불렛 스프레이 유리막 코팅제 300ml</li>
-                <li style="font-weight: bold;">44,900원</li>   
+                <li class="product_img"><img src="img/product02.png"></li>
+                <li style="font-weight: bold;">루미너스 LM 그래핀 스프레이 300ml 엘엠 코팅제</li>
+                <li style="font-weight: bold;">43,000원</li>   
+            </ul>
+
+            <ul> 
+                <li class="product_img"><img src="img/product03.jpg"></li>
+                <li style="font-weight: bold;">에탄올100% 오토워시 에탄올 워셔액 2L 사계절 대용량 전차종 외제차 사용가능</li>
+                <li style="font-weight: bold;">3,000원</li>   
             </ul>
             </div>
 
@@ -121,12 +125,12 @@
 
         <div id ="youtube">
             <div class="article_title"> 추천 영상 </div>
-           <iframe 
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-            >
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/bNiTIw2eNV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
         </div>
 
+        <script defer src="./js/slide.js"></script>
 
 </body>
 </html>

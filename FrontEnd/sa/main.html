@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Glow</title>
+    <style>
+   * {
+        margin: 0;
+        padding: 0;
+    }
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+    header{
+        height: 165px;
+        border: 1px solid blue;
+        
+    }
+    a {
+        text-decoration: none;
+    }
+    #logo {
+        float: left;
+    }
+    #top_menu {
+        
+    }
+    #top_menu ul {
+    list-style: none;
+       float: right;
+       padding-right: 20px;
+       margin-top: 10px;
+    
+    }
+
+    #top_menu ul li {
+        float : left;
+        margin-right: 10px;
+        
+    }
+    #main_menu {
+        width: 900px;
+        overflow: hidden;
+        margin: auto;
+        border: 1px solid yellow;
+        padding-left: 80px;
+        text-align: center;
+        
+    }
+    #main_menu li {
+        border: 1px solid blue;
+        width: 24%;
+        /* height: 25px; 삭제 */
+        line-height: 25px; /* 이걸로 높이 설정 */
+        float: left;
+        text-align: center;
+        list-style: none;
+        background-color: #c7cfef;
+        margin-bottom: 50px;
+        
+    }
+    #main_menu a{
+        color:mediumslateblue;
+        font-weight: 650;
+        font-family:Arial, Helvetica, sans-serif
+    }
+    .submenu li {
+        line-height: 50px;
+        background-color: #c7cfef;
+        color: red;
+        width: 100% !important;
+    }
+
+
+    .submenu {
+        height: 0px;
+        overflow: hidden;
+    }
+    .a {
+        border-radius:12px 0 0 12px;
+    }
+    .b {
+        border-radius:0 12px 12px 0;
+    }
+    #main_menu li:hover{
+        background-color: #c7cfef;
+        transition-duration: 0.5s;
+    }
+    #main_menu li:hover .submenu {
+        height: 150px; /*높이 변경*/
+        transition-duration: 1s;
+    }
+
+   
+    /* main */
+    section {
+        height: 600px;
+        border: 1px solid blue;
+        
+    }
+    /* footer */
+    footer {
+        height: 180px;
+        border: 1px solid red;
+    }
+   
+    .clear{
+        clear:both;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header 시작-->
+        <header>
+        <a href="main.html"><img id="logo" src="./img/logo.png"></a>
+        <nav id="top_menu">
+            <ul>
+                <li><a href="#"><img src="img/login.png"></a></li>
+                <li><a href="#"><img src="img/cart.png"></a></li>
+                <li><a href="#"><img src="img/my page2.png"></a></li>
+                <li><a href="#"><img src="img/serch2.png"></a></li>
+                
+            </ul>
+        </nav>
+        <div class="clear"></div>
+        <nav id="main_menu">
+            <ul>
+                <li class="a">
+                    <a href="#">MENU</a>
+                    <ul class="submenu">
+                        <li style="width: 100%;"><a href="#"> 전체 </a></li>
+                        <li><a href="#"> 도넛 </a></li>
+                        <li ><a href="#"> 케이크 </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">SHOP</a>
+                    <ul class="submenu">
+                        <li><a href="#">LIFE</a></li>
+                        <li><a href="#">FASHION</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">COMMUNITY</a>
+                    <ul class="submenu">
+
+                    </ul>
+                </li>
+
+                <li class="b">
+                    <a href="#">LOCATION</a>
+                    <ul class="submenu">
+
+                    </ul>
+                </li>
+              
+                
+            </ul>
+        </nav>
+        </header>
+        <!-- main -->
+        <section>메인</section>
+   
+    <!-- footer -->
+    <footer>푸터</footer>
+</div>
+    
+</body>
+</html>

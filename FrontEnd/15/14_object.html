@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #digClock {
+            border: 2px solid rgba(223, 46,46,0.3);
+            border-radius: 5px;
+            font-size: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 시스템의 현재 시간을 1초 단위로 출력 -->
+    <div id="digClock"></div>
+
+    <script>
+        function digClock(){
+            var today = new Date(); //오늘 현재의 시간을 생성해서 today 객체 생성
+            var day = today.getFullYear() + " 년"+ today.getMonth()+ 1 + " 월" + today.getDate() + " 일";
+            var time = today.getHours() + " 시" + today.getMinutes() + " 분"+ today.getSeconds() + " 초";
+
+            document.getElementById("digClock").innerHTML = day + time;
+            setTimeout('digClock()', 1000); // digClock 함수를 1000ms(1초) 마다 함수 호출
+        }
+        digClock();
+    </script>
+</body>
+</html>

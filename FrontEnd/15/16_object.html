@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var img = document.createElement('img');
+            // 객체의 속성 값 할당. (src, width, height ...)
+                //1. 객체.src = 'html5.jpg';
+                //2. 객체.setAttribute('src', 값);
+            img.src = 'html5.jpg';
+            img.width = 100;
+            img.setAttribute('hieght', 150);
+
+            document.body.append(img);
+        }
+    </script>
+</head>
+<body>
+    <!-- 링크를 클릭하면 img 태그를 생성해서 body에 추가해서 넣음 -->
+    <a href="#" onclick="add()">이미지 추가</a>
+</body>
+</html>

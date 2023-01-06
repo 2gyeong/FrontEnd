@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function() {
+$("#slide").click(function() {
+$("#panel").css("color","red")
+.slideDown(2000)
+.slideUp(6000)
+.fadeTo("slow", 0.3);
+});
+});
+</script>
+<style>
+#slide, #panel {
+padding: 5px;
+text-align: center;
+background-color: #e5eecc;
+border: solid 1px #c3c3c3;
+}
+#panel {
+padding: 50px;
+display: none;
+background-color: #ffff00;
+}
+</style>
+</head>
+</html>

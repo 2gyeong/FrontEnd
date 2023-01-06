@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.3.min.js"> </script>
+    <script>
+        $(document).ready(function(){
+            $('ans').hide(); // 페이지 로딩 시 ans 태그를 숨김 처리함
+
+
+            // [정답보기] 클릭 시 정답을 보이도록 처리
+            $('p.q1').click(function(){
+                $('ans.q1').show();
+            });
+
+            $('p.q2').click(function(){
+                $('ans.q2').show();
+            });
+
+            //정답을 숨기기 방법 두 가지
+            $('ans.q1').click(function(){
+                // $('ans.q1').hide();
+                $(this).hide();
+            });
+
+            $('ans.q2').click(function(){
+                $('ans.q2').hide();
+            });
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <h2> 질문 1 : 대한민국의 수도는 어디 입니까?</h2>
+    <p class="q1">[정답 보기]</p>
+        <ans class="q1">대한민국의 수도는 <strong>서울</strong> 입니다.</ans>
+    <h2> 질문 2 : 대한민국의 국보 1호는 무엇 입니까?</h2>
+    <p class="q2">[정답 보기]</p>
+        <ans class="q2">대한민국의 국보1호는 <strong>숭례문</strong> 입니다.</ans>
+
+</body>
+</html>

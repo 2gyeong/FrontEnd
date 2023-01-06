@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 날짜 객체 사용하기 : Date() -->
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    <script>
+        // 기본 생성자를 통해서 날짜 객체 생성 후 출력 : 현재의 시스템의 년월일 시분초
+        document.getElementById("d1").innerHTML = new Date();
+
+        // 특정 년도의 날짜 출력 하기 : 1970년 1월 1일 <== Unix 시간대
+            // 밀리세컨드 : 1491803527400 ms
+            // 2017년 4월 10일까지
+        document.getElementById("d2").innerHTML = new Date(1491803527400);
+
+        //Date() 생성자에 특정 날짜를 넣을 수 있다.
+        document.getElementById("d3").innerHTML = new Date("October 15, 2018 06:18:07");
+
+        // 월을 숫자로 넣을 수 있다. 주의 : ( 0 ~ 11 )      0 => 1월
+        document.getElementById("d4").innerHTML = new Date(2018, 11, 25, 18, 30, 29);
+        // 12월로 출력됨.
+
+    </script>
+</body>
+</html>

@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사이트 이름</title>
-    <script src="js/includ.js"></script>
+    <title>WASHOUR</title>
+    <script src="js/includ.js" src=""></script>
     <link rel="stylesheet" type="text/css" href="header.html">
     <link rel="stylesheet" type="text/css" href="main.html">
-    <style>
-        
+
+    <style>  
+        * {margin: 0; padding: 0;}
+        a {text-decoration-line: none;
+            color: #222222;}
+        a:visited{color: #222222;}
+         /* FIXME: 미디어 쿼리 / 일정 사이즈 이하로 줄이면 480px 까지 반응형으로 만들기 */
+         /* TODO: 서브 카테고리 hover 하면 main이 아래로 밀려서 겹치지 않게 보이도록*/
         .container {
-            width: 100%;
+            width: 1080px;
             margin: 0 auto;
-            position: relative;
         }
-        
         body{ 
             font-family: "맑은 고딕", "돋움";
             font-size: 12px;
@@ -23,23 +27,149 @@
             text-align: center;
         }
         header {
-            width: 100%;
+            width: 100% ; height: auto;
             margin: 0 auto;
             position: relative;
-            border: 1px solid red;
         }
         main{
-            margin-top: 70px;
+            margin-top: 20px;
+        }
+
+        footer{
+            width: 100%; height: auto;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /*main*/
+        .clear{clear: both;}
+        ul, li, ol {list-style-type: none; }
+        article {
+            display: flex;
+            justify-content: center;
+        }
+        .slide-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .slide-box img {
+            max-width: 80%; height: auto;
+            display: block;
+            border-radius: 2%;
+            margin: 2% 2%;
+            /* object-fit: cover; */
+        }
+        article {
+            display: flex;
+            align-items: center;
+        }
+        #best_item {
+            width: 50%; 
+            margin: 0 auto;
+            background-color: #ebecec;
+            border: 0.3px solid #5555550e;
+            border-radius: 2px;
+        }
+        .article_title {
+            color: black;
+            font-size: 13pt;
+            font-weight: bold;
+            padding: 2% 0 5% 5% ;
+        }
+        .product {
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            margin-bottom: 2%;
+        }
+        .product_img {  /*Best 상품 이미지 가운데 정렬*/
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5%;
+        }
+        #best_item ul {
+            width: 30%;
+            display: inline-block;
+        }
+
+        #best_item img {
+            width: 90%;
+            margin-bottom: 5%;
+        }
+        .p {
+            font-size: 10pt;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        #youtube {
+            width: 50%; height: auto;
+            margin: 0 auto;
+            background-color: #ebecec;
+            border-radius: 2px;
+            margin-top: 5%;
+            padding: 2% 2% 0 2%;
+            color: black;
+            border: 0.3px solid #5555550e;
+        }
+
+        iframe {
+            width: 45em;
         }
     </style>
 
 </head>
 <body>
+
     <div class="container">
         <header><div data-include="header.html"></div></header>
-        <main><div data-include="main.html"></div></main>
-    <div data-include="footer.html"></div>
-</div>
+        <main>
+            <div class = "slide-box">
+                <img class="slide1" src="img/event1.jpg">
+                <img class="slide1" src="img/event2.jpg">
+                <img class="slide1" src="img/event3.jpg">
+            </div> 
     
+            <div id ="best_item">
+                <div class="article_title">Best 상품</div>
+                <div class="product">
+                <ul> 
+                    <li><img src="img/product01.jpg"></li>
+                    <li class = "p title">더클래스 메탈불렛 스프레이 유리막 코팅제 300ml</li>
+                    <li class = "p price">44,900원</li>   
+                </ul>
+    
+                <ul> 
+                    <li><img src="img/product02.png"></li>
+                    <li class = "p title" >루미너스 LM 그래핀 스프레이 300ml 엘엠 코팅제</li>
+                    <li class = "p price">43,000원</li>   
+                </ul>
+    
+                <ul> 
+                    <li><img src="img/product03.jpg"></li>
+                    <li class = "p title" >에탄올100% 오토워시 에탄올 워셔액 2L 사계절 대용량 전차종 외제차 사용가능</li>
+                    <li class = "p price">3,000원</li>   
+                </ul>
+                </div>
+    
+            </div>
+    
+            <div id ="youtube">
+                <div class="article_title"> 추천 영상 </div>
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/bNiTIw2eNV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+        </main>
+        <footer><div data-include="footer.html"></div></footer>
+</div>
+
+<script defer src="./js/slide.js"></script>
+
 </body>
 </html>

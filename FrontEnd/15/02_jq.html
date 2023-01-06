@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Local 에서 Import -->
+    <script src="jquery-3.6.3.min.js"> </script>
+    <!-- Remote 에서 Import
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"> </script> -->
+    <script>
+        $(document).ready(function(){
+            // hide 클래스를 클릭하면 
+            $('.hide').click(function(){
+                $('p').hide();
+            });
+            $('.show').click(function(){
+                $('p').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p> 메세지 : 제이쿼리를 공부하고 있습니다.</p>
+    <button class ="hide"> 메세지 삭제 </button>
+    <button class="show"> 메세지 보이기 </button>
+</body>
+</html>

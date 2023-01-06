@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        createElent() : 태그를 생성함
+        createTextNode() : 텍스트 노드를 생성함
+        appendChild(): body 내부에 태그를 넣는다.
+    -->
+    <a href="#" onclick="add()"> 당신의 이름은 무엇 입니까?</a>
+
+    <script>
+        function add(){
+            //h3 태그를 생성해서 header 객체 생성
+            var header = document.createElement('h3');
+            var textNode = document.createTextNode('내 이름은 홍길동 입니다');
+
+            // <h3> 내 이름은 홍길동입니다.<h3>
+            header.appendChild(textNode);
+            document.body.appendChild(header);
+        }
+    </script>
+</body>
+</html>
