@@ -3,7 +3,7 @@ a {text-decoration-line: none;
     color: #222222;}
 a:visited{color: #222222;}
  /* FIXME: 미디어 쿼리 / 일정 사이즈 이하로 줄이면 480px 까지 반응형으로 만들기 */
- /* TODO: 서브 카테고리 hover 하면 main이 아래로 밀려서 겹치지 않게 보이도록*/
+ 
  .container {
     width: 100%;
     margin: 0 auto;
@@ -17,12 +17,12 @@ a:visited{color: #222222;}
 }
 
 body{
+    padding-top: 200px;
     font-family:'Pretendard-Regular';
-    font-size: 12px;
+    font-size: 13px;
     color: #222222;
     text-align: center;
 }
-
 
 header {
     top:0;
@@ -30,9 +30,6 @@ header {
     margin: 0 auto;
     background-color: white;
     position: fixed;
-}
-main{
-    /* margin-top: 20%; */
 }
 
 footer{
