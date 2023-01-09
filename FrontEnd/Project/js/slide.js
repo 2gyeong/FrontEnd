@@ -1,9 +1,9 @@
 
-    // 이미지 자동으로 넘기기
+ // 이미지 자동으로 넘기기
     let index = 0;   //이미지에 접근하는 인덱스
-    window.onload = function(){
+    //  window.onload = function(){
         slideShow();
-    }
+    //  }
     
     function slideShow() {
         let i;
@@ -15,6 +15,6 @@
         if (index > x.length) {
             index = 1;  //인덱스가 초과되면 1로 변경
         }   
-        x[index-1].style.display = "block";  //해당 인덱스는 block으로
+        x[index-1].style.display = "block";  
         setTimeout(slideShow, 4000);   //함수를 4초마다 호출
         }
