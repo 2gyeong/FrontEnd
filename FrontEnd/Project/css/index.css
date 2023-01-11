@@ -59,7 +59,6 @@ header {
 #best_item {
     width: 100%; 
     background-color: #ebecec;
-    border: 0.3px solid #5555550e;
 }
 #best_item .title {
     color: black;
@@ -105,17 +104,33 @@ header {
     width: 90%;
     margin-bottom: 5%;
 }
-#banner {
-    
+
+#section3 {
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner{
+    width: 100%;
+    max-width: 500px;
+    min-width: 240px;
+    margin: 5%;
+}
+#banner img {
+    width: 100%;
 }
 #youtube {
-    width: 100%; height: auto;
+    width: 100%;
+    max-width: 600px;
+    min-width: 240px;
+    height: 350px;
     background-color: #ebecec;
-    margin-top: 5%;
-    padding: 2% 2% 0 2%;
+    margin: 5% 2% 0 0;
     display: block;
     border: 0.3px solid #5555550e;
-
+    border-radius: 2%;
 }
 
 #youtube .title{
@@ -127,5 +142,9 @@ header {
 }
 
 iframe {
-    width: 50%;
+    width: 90%;
+    max-width: 450px;
+    min-width: 240px;
+    height: 70% ;
+    margin: 2%;
 }

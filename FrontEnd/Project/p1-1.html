@@ -17,8 +17,9 @@
         .clear{clear: both;}
         .p_container {
             width: 100%;
-            margin-bottom: 100px;
             margin: 0 auto;
+            display: flex;
+            justify-content: center;
         }
 
         @font-face {
@@ -33,6 +34,7 @@
             font-family:'Pretendard-Regular';
             font-size: 13px;
             color: #222222;
+
         }
 
         header {
@@ -42,16 +44,19 @@
             background-color: white;
             position: fixed;
         }
-        .p_img{
+        .wrap {
+            width: 100%;
+            max-width: 1080px;
+            margin: 0 auto;
         }
         .item_detail{
 
         }
         .item_detail li{
-            /* display: flex;
+            display: flex;
             justify-content: flex-start;
             flex-direction: row;
-            align-items: center; */
+            align-items: center; 
         }
         .item_info {
             border: 1px solid red;
@@ -59,8 +64,9 @@
 
         .item_detail_list dl {
             font-size: 15px;
-            /* float: left; */
+            float: left;
             width: 100%;
+            margin-top: 10px;
         }
         .item_detail_list dt{
             font-size: 15px;
@@ -81,11 +87,15 @@
 </head>
 <body>
     <header><div data-include="header.html"></div></header>
+    <div class="wrap">
+    <div class ="category_map"> Home > 외장관리 > 세정제 > 카샴푸</div>
     <div class="p_container">
-        <div class ="category_map"> Home > 외장관리 > 세정제 > 카샴푸</div>
+        
         <div class="p_img"><img src="img/1-1.png"></div>
-        <div class="clear"></div>
-        <div class="item_detail">
+        
+            <div class="clear"></div>
+
+            <div class="item_detail">
             <div class="item_info">
                 <ul>
                     <li><h3>블루믹스 마일드플러스 카샴푸 500ml</h3></li>
@@ -107,8 +117,9 @@
                     <dd>대한민국</dd>
                 </dl>
             </div>
+            </div>
     </div>
-
+</div>
     <footer><div data-include="footer.html"></div></footer>
 </body>
 </html>
