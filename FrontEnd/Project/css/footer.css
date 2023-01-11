@@ -1,13 +1,42 @@
-
-li {
-margin: 10px 5px 10px 5px;
-list-style-type: none;
-float: left;}
-#footerbox{
-    width: 100%; 
-    margin: 50px 20px 0 20px;
+footer {
+    width: 100%;
+    background-color: #f0f0f0;
     border-top: 1px solid #bdbdbd;
+    margin-top: 20px;
+    font-size: 9pt;
 }
-#info {
-    margin: 0 auto;
+footer .container {
+    max-width: 1080px;
+    padding-top: 2%;
+    /*footer 가로 정렬*/
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
+fotter div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+footer .container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+.s1 {
+   width: 150px; height: 110px;
+}
+
+footer li {
+margin: 0 5px 10px 5px;
+
+}
+
+#footerbox, #info {
+    width: 990px; 
+    margin: 0 0 5px 0;
+}
+
