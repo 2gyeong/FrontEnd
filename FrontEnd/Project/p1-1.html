@@ -16,8 +16,10 @@
         a:visited{color: #222222;}
         .clear{clear: both;}
         .p_container {
-            width: 100%;
+            width: 100%; height: 600px;
             margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
             display: flex;
             justify-content: center;
         }
@@ -44,45 +46,138 @@
             background-color: white;
             position: fixed;
         }
+        footer {
+            display: flex;
+            justify-content: center;
+        }
         .wrap {
             width: 100%;
             max-width: 1080px;
             margin: 0 auto;
         }
-        .item_detail{
 
-        }
         .item_detail li{
             display: flex;
             justify-content: flex-start;
             flex-direction: row;
             align-items: center; 
+
         }
         .item_info {
-            border: 1px solid red;
+            border-bottom: 1px solid #bdbdbd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+
+        }
+        .item_detail_list table {
+            border-bottom: 1px solid #bdbdbd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
-        .item_detail_list dl {
+        .item_detail_list table tr {
             font-size: 15px;
-            float: left;
-            width: 100%;
-            margin-top: 10px;
-        }
-        .item_detail_list dt{
-            font-size: 15px;
-            float: left;
-            width: 15%;
-            margin: 0 5% 0 0;
             color: #333333;
             font-weight: 500;
-            word-wrap: break-word;
         }
 
-        .item_detail_list dd {
-            display: block;
-            margin-inline-start: 40px;
+        .item_detail_list table td{
+            height: 30px;
         }
 
+        .item_check ul {
+            padding: 1%;
+            height: 60px;
+            border-radius: 8px;
+            font-size: 11pt;
+            font-weight: bold;
+            color: #706f6f;
+            background-color: #f0f0f0;
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item_check li {
+            width: 50px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .item_check .t_amount {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            font-size: 15pt;
+
+        }
+        .item_check .t_amount ul{
+            width: 500px;
+            padding: 1%;
+            font-size: 11pt;
+            font-weight: bold;
+        }
+        .item_check .t_amount li {
+            width: 180px;
+        }
+        .item_check .t_amount strong {
+            color: rgb(0, 153, 255); 
+        }
+        .order_box {
+            background-color: white;
+            height: 130px;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+        }
+        .order_box > div {
+            width: 80px;  height: 30px;
+            color: rgb(0, 153, 255); 
+            border: 2px solid rgb(0, 153, 255);
+            padding: 2%;
+            border-radius: 10px;
+            margin: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+        #item_view_tap {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            width: 100%; height: 50px;
+            font-size: 11pt;
+            font-weight: 500;
+
+        }
+        #item_view_tap ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        #item_view_tap li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 10px;
+        }
+        #item_view_tap li:hover {
+            color: rgb(0, 153, 255); 
+            border-bottom: 2px solid rgb(0, 153, 255);
+        }
+
+        #item_detail_img {
+            margin-top: 50px;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
@@ -92,34 +187,71 @@
     <div class="p_container">
         
         <div class="p_img"><img src="img/1-1.png"></div>
-        
-            <div class="clear"></div>
-
             <div class="item_detail">
             <div class="item_info">
                 <ul>
-                    <li><h3>블루믹스 마일드플러스 카샴푸 500ml</h3></li>
-                    <li><strong>9,000 원</strong> </li>
+                    <li style="font-size: 18pt; font-weight: bold;">블루믹스 마일드플러스 카샴푸 500ml</li>
+                    <li><br></li>
+                    <li style="font-size: 18pt; font-weight: bold;"><strong>9,000 원</strong> </li>
                 </ul>
             </div> 
 
             <div class="item_detail_list">
-                <dl>
-                    <dt>배송비</dt>
-                    <dd> 2,500원 / 주문시결제(선결제) / 택배</dd>
-                </dl>
-                <dl>
-                    <dt>제조사</dt>
-                    <dd>블루믹스</dd>
-                </dl>
-                <dl>
-                    <dt>원산지</dt>
-                    <dd>대한민국</dd>
-                </dl>
+                <table>
+                    <tr>
+                        <td width="100px">배송비</td>
+                        <td width="350px"> 2,500원 / 주문시결제(선결제) / 택배</td>
+                    </tr>
+                    <tr>
+                        <td>제조사</td>
+                        <td>블루믹스</td>
+                    </tr>
+                    <tr>
+                        <td>원산지</td>
+                        <td>대한민국</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="item_check">
+                <ul>
+                    <li style="width: 150px;">블루믹스 마일드플러스 카샴푸 500ml</li>
+                    <li style="width: 100px;"><input type="hidden" name="sell_price" value="9000">
+                        <input type="text" name="amount" value="1" size="3" max="">
+                        <input type="button" value=" + " name="add">
+                        <input type="button" value=" - " name="minus">
+                    </li>
+                    <li style="width: 110px;"><input type="text" name="sum" size="11" readonly>원</li>
+                </ul>
+                <ul class="t_amount">
+                    <li >총 상품금액 <strong>9,000</strong>원</li>
+                    
+                </ul>
+                <div class="order_box">
+                    <div>찜하기</div><div>장바구니</div><div>바로 구매</div>
+                </div>
+                   
+
             </div>
             </div>
+            
     </div>
+        <div id="item_view_tap">
+                <ul>
+                    <li>상품상세정보</li>
+                    <li>상품후기</li>
+                    <li>상품문의</li>
+                    <li>배송안내</li>
+                    <li>교환 및 반품안내</li>
+                </ul>
+        </div>
+
+        <div id="item_detail_img">
+            <img src="img/p1-1_1.png">
+            <img src="img/p1-1_2.png">
+        </div>
+
 </div>
+
     <footer><div data-include="footer.html"></div></footer>
 </body>
 </html>
