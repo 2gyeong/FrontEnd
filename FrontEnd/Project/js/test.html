@@ -7,31 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <input type='button'
-       onclick='count("plus")'
-       value='+'/>
-<input type='button'
-       onclick='count("minus")'
-       value='-'/>
-<div id='result'>0</div>
+    <form name="form1">
+    수량 : <input type = hidden name="sell_price" value="9000">
+    <input type="button" name="amount" value="1" size="3" max="">
+    <input type="button" value=" + " name="add">
+    <input type="button" value=" - " name="minus"><br>
+    금액 : <input type="text" name="sum" value="9000" size="11" readonly>원
+
+    </form>
+
+</body>
 
 <script>
-function count(type)  {
-    // 결과를 표시할 element
-    const resultElement = document.getElementById('result');
-    
-    // 현재 화면에 표시된 값
-    let number = resultElement.innerText;
-    
-    // 더하기/빼기
-    if(type === 'plus') {
-      number = parseInt(number) + 1;
-    }else if(type === 'minus')  {
-      number = parseInt(number) - 1;
-    }
-    
-    // 결과 출력
-    resultElement.innerText = number;
-  }</script>
-</body>
+    const formform=document.getElementsByName("form1"),
+            sell_price=document.form1.amount,
+            amount=document.form1.amount,
+            add=document.form1.add,
+            minus=document.form1.minus,
+            sum=document.form1.sum;
+
+
+    if(formform){
+        sum.value=sell_price.value;
+
+        let amountval=amount.value,
+            sumval=sum.value,
+            priceval=sell_price.value;
+
+            if(add){
+                add.addEventListener('click', function(){
+                    amountval++;
+                    sumval=amount*priceval;
+                    amount.value=sumval;
+                    console.log(amountval,sumval,priceval);
+                })
+            }
+
+    if(minus){
+        minus.addEventListener('click', function(){
+           if(amountval > 1){
+            amountval--;
+            sumval=amountval*priceval;
+            amount.value=amount;
+            sum.value=sumval;
+            console.log(amountval, sumval,priceval);
+           } else {
+            amountval=1;
+           }
+    }}
+}
+
+</script>
 </html>

@@ -1,0 +1,105 @@
+
+* {margin: 0; padding: 0;}
+a {text-decoration-line: none;
+    color: #222222;}
+a:visited{color: #222222;}
+.clear{clear: both;}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    padding-top: 200px;
+    font-family:'Pretendard-Regular';
+    font-size: 13px;
+    color: #222222;
+    text-align: center;
+}
+
+header {
+    top:0;
+    width: 100% ; 
+    margin: 0 auto;
+    background-color: white;
+    position: fixed;
+}
+
+.title {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.category {
+width: 1080px;
+box-sizing: border-box;
+display: inline-flex;
+font-size: 16px;
+font-weight: bold;
+margin-top: 20px;
+padding-bottom: 50px;
+border-bottom: 1px solid #3b3a3a86;
+}
+
+.category ul {
+    width: 100%; 
+}
+.category img{
+    width: 80px;
+    margin-top: 5px;
+}
+.category ul li {
+    width: 100px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.product_box {
+    width: 1080px; 
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.product_box > ul{
+    width: 180px;
+    min-width: 160px;
+    text-align: left;
+    margin: 1em;
+    
+}
+.product_box ul li{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.product_box ul li img {
+    width: 160px;
+    border: 1px solid #cecece;
+}
+
+.product_title {
+    margin-top: 10px;
+}
+.product_title:hover {
+    color: rgb(0, 153, 255); 
+}
+.product_price {
+    margin-top: 5px;
+}
+.product_price:hover {
+    color: rgb(0, 153, 255); 
+}
