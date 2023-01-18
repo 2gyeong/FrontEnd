@@ -15,6 +15,6 @@
         if (index > x.length) {
             index = 1;  //인덱스가 초과되면 1로 변경
         }   
-        x[index-1].style.display = "block";  
+        x[index-1].style.display = "block";
         setTimeout(slideShow, 4000);   //함수를 4초마다 호출
         }

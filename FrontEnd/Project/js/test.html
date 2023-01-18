@@ -19,7 +19,7 @@
 </body>
 
 <script>
-    const formform=document.getElementsByName("form1"),
+    const form=document.getElementsByName("form1"),
             sell_price=document.form1.amount,
             amount=document.form1.amount,
             add=document.form1.add,
@@ -27,7 +27,7 @@
             sum=document.form1.sum;
 
 
-    if(formform){
+    if(form){
         sum.value=sell_price.value;
 
         let amountval=amount.value,
@@ -43,17 +43,17 @@
                 })
             }
 
-    if(minus){
-        minus.addEventListener('click', function(){
-           if(amountval > 1){
-            amountval--;
-            sumval=amountval*priceval;
-            amount.value=amount;
-            sum.value=sumval;
-            console.log(amountval, sumval,priceval);
-           } else {
-            amountval=1;
-           }
+        if(minus){
+            minus.addEventListener('click', function(){
+            if(amountval > 1){
+                amountval--;
+                sumval=amountval*priceval;
+                amount.value=amount;
+                sum.value=sumval;
+                console.log(amountval, sumval,priceval);
+            } else {
+                amountval=1;
+            }
     }}
 }
 
