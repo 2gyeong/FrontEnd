@@ -10,8 +10,11 @@ function count(type)  {
       number = parseInt(number) + 1;
     }else if(type === 'minus')  {
       number = parseInt(number) - 1;
-    }
-    
+      
+      if(number <= 0 ){
+        number = 1;
+      }
+    }   
     // 결과 출력
     resultElement.innerText = number;
   }
