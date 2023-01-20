@@ -18,3 +18,4 @@
         x[index-1].style.display = "block";
         setTimeout(slideShow, 4000);   //함수를 4초마다 호출
         }
+

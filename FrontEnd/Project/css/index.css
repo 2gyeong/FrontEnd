@@ -2,7 +2,6 @@
 a {text-decoration-line: none;
     color: #222222;}
 a:visited{color: #222222;}
- /* FIXME: 미디어 쿼리 / 일정 사이즈 이하로 줄이면 480px 까지 반응형으로 만들기 */
  
  .container {
     width: 100%;
@@ -17,7 +16,7 @@ ul, li, ol {list-style-type: none; }
 }
 ul, li, ol {list-style-type: none; }
 body{
-    padding-top: 185px;
+    padding-top: 180px;
     font-family:'Pretendard-Regular';
     font-size: 13px;
     color: #222222;
@@ -42,8 +41,7 @@ header {
 }
 
 .slide-box {
-    width: 100%;
-    max-width: 1440px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,9 +49,9 @@ header {
 }
 
 .slide-box img {
-    max-width: 80%; height: auto;
+    max-width: 90%; height: auto;
     border-radius: 2%;
-    margin: 4% 0 5% 0;
+    margin: 2% 0 4% 0;
 
 }
 
@@ -107,11 +105,12 @@ header {
 }
 
 #section3 {
-    width: 100%;
+    width: 80%;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2% 10% 2% 10%;
 }
 
 #banner{
@@ -126,13 +125,15 @@ header {
 }
 #youtube {
     width: 100%;
+    min-width: 300px;
     height: 100% auto;
-
+    min-height: 400px;
     background-color: #ebecec;
-    margin: 0 2% 0 0;
+    margin: 0 10% 0 0;
     display: block;
     border: 0.3px solid #5555550e;
     border-radius: 2%;
+    
 }
 
 #youtube .title{
@@ -144,8 +145,97 @@ header {
 }
 
 iframe {
-    width: 90%;
-    height: 100% ;
-    min-height: 300px;
+    width: 30vw;
+    min-width: 250px;
+    max-height: 250px;
+    height: 30vw ;
+    min-height: 150px;
     margin: 2%;
 }
+/* 슬라이드 자동변경, 캐러샐, 인디케이터 */
+
+#visual {
+    width: 200px;
+    height: 600px;
+    margin: 0 20px 0 0 auto;
+    overflow: hidden;           
+    border-radius: 50px;
+  
+  }      
+  #visual>div {
+    position: absolute; /* 중요 */
+    left: 1350px;
+    top: 220px;
+    width: 250px;
+    height: 550px;
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+  #visual>div.on{
+    opacity: 1;
+  }
+  #control { 
+    position: absolute; 
+    margin-top:580px;
+    width: 100px;
+    height: 50%;
+    text-align: center;         
+  }
+  #control a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f6f5f5;                       
+    line-height: 26px;
+    font-size: 0.8em;
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 14px;
+    margin: 0 2px
+  }
+  
+  #control a.on {
+    background: #9ab3f5;
+  }
+  #left > i { 
+    position: absolute;
+    display: inline-block;
+    color: rgb(175, 175, 175);
+    }
+
+   #right > i {
+    position: absolute;
+    display: inline-block;
+    color: rgb(175, 175, 175);
+    }
+  
+  div#left{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    top: 97.5%;
+    left: 20%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    transition: .4s ease;
+  }
+  
+  div#right{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    top: 97.5%;
+    left: 75%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    transition: .4s ease;
+  }
+  div#left i:hover{
+    color: rgb(107, 171, 255);
+    transition: 0.2s ease;
+  }
+  div#right i:hover{
+    color: rgb(107, 171, 255);
+    transition: 0.2s ease;
+  }

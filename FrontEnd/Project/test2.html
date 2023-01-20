@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <style>
+    
+  li {
+    list-style: none;
+  }       
+  a {
+    font-family: "돋움";
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+  }    
+  
+  
+  #visual {
+    position: absolute;
+    top: 200px;
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;           
+    border-radius: 2%;
+  
+  }      
+  #visual>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+  #visual>div.on{
+    opacity: 1;
+  }
+  #control { 
+    position: absolute;
+    top:94%;
+    width: 100%;
+    bottom: 30px;
+    text-align: center;         
+  }
+  #control a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f6f5f5;                       
+    line-height: 26px;
+    font-size: 0.8em;
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 14px;
+    margin: 0 2px
+  }
+  
+  #control a.on {
+    background: #9ab3f5;
+  }
+  #left > i { 
+    position: absolute;
+    display: inline-block;
+    color: rgb(175, 175, 175);
+    }
+
+   #right > i {
+    position: absolute;
+    display: inline-block;
+    color: rgb(175, 175, 175);
+    }
+  
+  div#left{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    top: 97.5%;
+    left: 20%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    transition: .4s ease;
+  }
+  
+  div#right{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    top: 97.5%;
+    left: 75%;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+    transition: .4s ease;
+  }
+  div#left i:hover{
+    color: rgb(107, 171, 255);
+    transition: 0.2s ease;
+  }
+  div#right i:hover{
+    color: rgb(107, 171, 255);
+    transition: 0.2s ease;
+  }
+
+     </style>
+</head>
+  <body>
+    <div id="visual">     
+             <div class="on"><a href="#"><img src="./img/s1.jpg" alt="1" width="100%" height="100%"></a></div>
+             <div><a href="#"><img src="./img/s2.jpg" alt="2" width="100%" height="100%"></a></div>
+             <div><a href="#"><img src="./img/s3.jpg" alt="3" width="100%" height="100%"></a></div>
+             <div><a href="#"><img src="./img/s3.jpg" alt="4" width="100%" height="100%"></a></div>   
+          <section>   
+            <div id="left">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
+              <div id="right">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
+           </section>
+        <section id="control">
+            <a class="on" href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </section>
+  </div>
+
+  <script>
+      var idx_lgth = $("#visual>div").length;
+  var srt = 1;
+  var idx = 0;
+  
+  $("section>a").click(function(){
+    idx = $(this).index();
+    srt = idx;
+    $(this).addClass('on').siblings().removeClass('on');
+    $("#visual>div").eq(idx).addClass('on').siblings().removeClass('on');
+  });
+  
+var AutoSlide = setInterval(AutoRun, 2000);
+
+function AutoRun(){
+  srt++;  
+  
+  if(srt == idx_lgth){
+      srt = 0;  
+  }
+$("section>a").eq(srt).addClass('on').siblings().removeClass('on');
+  $("#visual>div").eq(srt).addClass('on').siblings().removeClass('on');
+}
+
+$("#visual").mouseover(function(){
+  clearInterval(AutoSlide);
+  $("#right").css({opacity : '100'});
+  $("#left").css({opacity : '100'});
+});
+$("#visual").mouseleave(function(){
+   AutoSlide = setInterval(AutoRun, 1000);
+    $("#right").css({opacity : '100'});
+  $("#left").css({opacity : '100'});
+});
+
+$("#right").click(function(){
+  srt++;
+ if(srt == idx_lgth){
+      srt = 0;   
+ } 
+ $("#visual>div").eq(srt).addClass('on').siblings().removeClass('on'); $("section>a").eq(srt).addClass('on').siblings().removeClass('on');
+});
+
+$("#left").click(function(){
+  srt--;
+  if(srt == -1){
+      srt = idx_lgth-1; 
+  }
+ $("#visual>div").eq(srt).addClass('on').siblings().removeClass('on');
+  $("section>a").eq(srt).addClass('on').siblings().removeClass('on'); 
+});
+  </script>
+</body>
+</html>
