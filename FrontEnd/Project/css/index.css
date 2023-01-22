@@ -16,7 +16,7 @@ ul, li, ol {list-style-type: none; }
 }
 ul, li, ol {list-style-type: none; }
 body{
-    padding-top: 180px;
+    padding-top: 190px;
     font-family:'Pretendard-Regular';
     font-size: 13px;
     color: #222222;
@@ -29,6 +29,7 @@ header {
     margin: 0 auto;
     background-color: white;
     position: fixed;
+    z-index: 2;
 }
 
 
@@ -36,20 +37,21 @@ header {
 
 #section1 {
     width: 100%;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
 
 .slide-box {
-    width: 50%;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 2%;
     align-items: center;
     overflow: hidden;
 }
 
 .slide-box img {
-    max-width: 90%; height: auto;
+    max-width: 80%; height: auto;
     border-radius: 2%;
     margin: 2% 0 4% 0;
 
@@ -125,15 +127,12 @@ header {
 }
 #youtube {
     width: 100%;
-    min-width: 300px;
     height: 100% auto;
-    min-height: 400px;
     background-color: #ebecec;
     margin: 0 10% 0 0;
     display: block;
     border: 0.3px solid #5555550e;
     border-radius: 2%;
-    
 }
 
 #youtube .title{
@@ -147,49 +146,61 @@ header {
 iframe {
     width: 30vw;
     min-width: 250px;
-    max-height: 250px;
+    max-height: 300px;
     height: 30vw ;
     min-height: 150px;
     margin: 2%;
 }
+
 /* 슬라이드 자동변경, 캐러샐, 인디케이터 */
 
 #visual {
-    width: 200px;
-    height: 600px;
-    margin: 0 20px 0 0 auto;
-    overflow: hidden;           
-    border-radius: 50px;
-  
-  }      
+    z-index: 1;
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+  }
+
   #visual>div {
     position: absolute; /* 중요 */
-    left: 1350px;
-    top: 220px;
-    width: 250px;
-    height: 550px;
+    top: 23%;
+    width: 16.5%;
+    height: auto;
     transition: 0.3s ease;
     opacity: 0;
+    /* border-radius: 5em; */
   }
+
   #visual>div.on{
     opacity: 1;
   }
+  #s1_bt {
+    position: absolute;
+    margin-top: 35%;
+    left: 67.4%;
+    width: 16.3%;
+    height: 2%;
+    display: inline-flex;
+    justify-content: space-around;
+  }
   #control { 
-    position: absolute; 
-    margin-top:580px;
-    width: 100px;
-    height: 50%;
+    width: 100%;
     text-align: center;         
   }
+
   #control a {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 5%;
+    height: 0.3em;
     background: #f6f5f5;                       
     line-height: 26px;
-    font-size: 0.8em;
+    font-size: 150%;
     border: 1px solid rgb(184, 181, 181);
-    border-radius: 14px;
+    border-radius: 1em;
     margin: 0 2px
   }
   
@@ -197,37 +208,33 @@ iframe {
     background: #9ab3f5;
   }
   #left > i { 
-    position: absolute;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     color: rgb(175, 175, 175);
     }
 
    #right > i {
-    position: absolute;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     color: rgb(175, 175, 175);
     }
   
   div#left{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    top: 97.5%;
-    left: 20%;
-    transform: translate(0%, -50%);
+    display: inline-flex;
+    justify-content: center;
+    width: 10%;
+    height: 20%;
+    font-size: 100%;
     cursor: pointer;
     transition: .4s ease;
   }
   
   div#right{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    top: 97.5%;
-    left: 75%;
-    transform: translate(0%, -50%);
+    display: inline-flex;
+    justify-content: center;
+    width: 10%;
+    height: 10%;
+    font-size: 100%;;
     cursor: pointer;
     transition: .4s ease;
   }

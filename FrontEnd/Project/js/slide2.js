@@ -10,7 +10,7 @@ var idx_lgth = $("#visual>div").length;
     $("#visual>div").eq(idx).addClass('on').siblings().removeClass('on');
   });
   
-var AutoSlide = setInterval(AutoRun, 2000);
+var AutoSlide = setInterval(AutoRun, 7000);
 
 function AutoRun(){
   srt++;  
