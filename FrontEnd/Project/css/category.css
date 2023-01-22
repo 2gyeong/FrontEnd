@@ -32,6 +32,7 @@ header {
     margin: 0 auto;
     background-color: white;
     position: fixed;
+    z-index: 2;
 }
 
 .title {
@@ -86,9 +87,25 @@ border-bottom: 1px solid #3b3a3a86;
     display: flex;
     justify-content: center;
 }
+
+
+
 .product_box ul li img {
     width: 160px;
+}
+
+.img_box{
+    overflow: hidden;
     border: 1px solid #cecece;
+
+    transform:scale(1.0);        /* 마우스 over 시 자연스럽게 돌아오기*/
+    transition: transform .5s; 
+    z-index: 1;
+}
+
+.product_box ul li img:hover {
+    transform:scale(1.2); 
+    transition: transform .1s;
 }
 
 .product_title {

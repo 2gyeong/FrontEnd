@@ -57,15 +57,22 @@ header {
 
 }
 
+#section2 {
+  width: 100%;
+  background-color: #ebecec;
+  display: flex;
+  justify-content: center;
+}
+
 #best_item {
-    width: 100%; 
+    width: 90%; 
     background-color: #ebecec;
 }
 #best_item .title {
     color: black;
-    font-size: 15pt;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 30px 0 20px 30px ;
+    padding: 30px 0 20px 20px ;
     text-align: left;
 }
 .product {
@@ -74,37 +81,51 @@ header {
     color: black;
     margin-bottom: 2%;
 }
-.product_img {  /*Best 상품 이미지 가운데 정렬*/
-    display: flex;
-    justify-content: center;
-    border-radius: 5%;
+.img_box{
+  overflow: hidden;
+  transform:scale(1.0);        /* 마우스 over 시 자연스럽게 돌아오기*/
+  transition: transform .5s; 
+
 }
 
-#section2 {
-    width: 100%;
-    background-color: #ebecec;
-    display: flex;
-    justify-content: center;
-}
 #best_item {
-    max-width: 720px;
+    width: 80%;
     padding: 2%;
 }
 #best_item ul {
-    width: 30%;
+    width: 18%;
     display: inline-block;
 }
 #best_item li{
-    font-size: 11pt; 
-    font-weight: bold;
-    text-align: left;
-    float: none;
+  font-size: 11pt; 
+  font-weight: bold;
+  text-align: left;
+  float: none;
+  margin-bottom: 5%;
+  word-break: break-all;
+
+  display: flex;
+  align-items: center;
 }
 
-#best_item img {
-    width: 90%;
-    margin-bottom: 5%;
+.img_box img {
+    width: 100%;
 }
+.img_box img:hover {
+  transform:scale(1.2); 
+  transition: transform .1s;
+}
+
+.product_title:hover {
+  color: rgb(0, 153, 255); 
+}
+.product_price {
+  margin-top: 5px;
+}
+.product_price:hover {
+  color: rgb(0, 153, 255); 
+}
+
 
 #section3 {
     width: 80%;
@@ -128,6 +149,7 @@ header {
 #youtube {
     width: 100%;
     height: 100% auto;
+    padding: 0 3% 2% 3%;
     background-color: #ebecec;
     margin: 0 10% 0 0;
     display: block;
@@ -160,18 +182,17 @@ iframe {
     height: auto;
     display: flex;
     justify-content: flex-start;
-    overflow: hidden;
-    
+    margin-top: 1.3%;
   }
 
   #visual>div {
-    position: absolute; /* 중요 */
-    top: 23%;
+    position: absolute; /* 설정 중요 */
     width: 16.5%;
     height: auto;
     transition: 0.3s ease;
     opacity: 0;
-    /* border-radius: 5em; */
+    border-radius: 1em;
+    overflow: hidden;
   }
 
   #visual>div.on{
@@ -179,29 +200,28 @@ iframe {
   }
   #s1_bt {
     position: absolute;
-    margin-top: 35%;
+    margin-top: 32.5%;
     left: 67.4%;
     width: 16.3%;
-    height: 2%;
-    display: inline-flex;
-    justify-content: space-around;
   }
   #control { 
     width: 100%;
-    text-align: center;         
+    text-align: center;
   }
 
   #control a {
     display: inline-flex;
     justify-content: space-around;
-    width: 5%;
-    height: 0.3em;
+
+    width: 1vw;
+    max-width:10px;
+    height: 1vw;
+    max-height: 10px;
+
     background: #f6f5f5;                       
-    line-height: 26px;
-    font-size: 150%;
     border: 1px solid rgb(184, 181, 181);
     border-radius: 1em;
-    margin: 0 2px
+    margin: 0 2% 0 2%;
   }
   
   #control a.on {

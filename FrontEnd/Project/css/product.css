@@ -24,7 +24,7 @@ body{
     font-family:'Pretendard-Regular';
     font-size: 13px;
     color: #222222;
-
+    
 }
 
 header {
@@ -185,3 +185,9 @@ footer {
 
 .plus {width: 20px;}
 .minus {width: 20px;}
+
+#total {
+    width: 100px;
+    color: rgb(0, 153, 255);
+    text-align: right;
+}

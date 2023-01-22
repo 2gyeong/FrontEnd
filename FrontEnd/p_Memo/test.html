@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form name="form1">
+    <form method = "get" name="form1">
     수량 : <input type = hidden name="sell_price" value="9000">
     <input type="button" name="amount" value="1" size="3" max="">
     <input type="button" value=" + " name="add">
@@ -19,7 +19,7 @@
 </body>
 
 <script>
-    const form=document.getElementsByName("form1"),
+    const form=document.getElementsByName('form1'),
             sell_price=document.form1.amount,
             amount=document.form1.amount,
             add=document.form1.add,
@@ -54,7 +54,8 @@
             } else {
                 amountval=1;
             }
-    }}
+    }
+}
 }
 
 </script>

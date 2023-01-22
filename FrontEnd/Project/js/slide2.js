@@ -10,7 +10,7 @@ var idx_lgth = $("#visual>div").length;
     $("#visual>div").eq(idx).addClass('on').siblings().removeClass('on');
   });
   
-var AutoSlide = setInterval(AutoRun, 7000);
+var AutoSlide = setInterval(AutoRun, 4000);
 
 function AutoRun(){
   srt++;  
@@ -28,7 +28,7 @@ $("#visual").mouseover(function(){
   $("#left").css({opacity : '100'});
 });
 $("#visual").mouseleave(function(){
-   AutoSlide = setInterval(AutoRun, 1000);
+   AutoSlide = setInterval(AutoRun, 4000);
     $("#right").css({opacity : '100'});
   $("#left").css({opacity : '100'});
 });
