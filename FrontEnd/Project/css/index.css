@@ -2,8 +2,7 @@
 a {text-decoration-line: none;
     color: #222222;}
 a:visited{color: #222222;}
- 
- .container {
+.container {
     width: 100%;
     margin: 0 auto;
 }
