@@ -47,7 +47,9 @@ footer {
     max-width: 1080px;
     margin: 0 auto;
 }
-
+.p_img {
+    margin-right: 60px;
+}
 .item_detail li{
     display: flex;
     justify-content: flex-start;
