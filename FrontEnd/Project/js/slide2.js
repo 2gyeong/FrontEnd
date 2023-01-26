@@ -1,7 +1,6 @@
 var idx_lgth = $("#visual>div").length;
   var srt = 1;
   var idx = 0;
-  
   $("section>a").click(function(){
    
     idx = $(this).index();
