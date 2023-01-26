@@ -16,8 +16,6 @@
     color: #000;
     text-decoration: none;
   }    
-  
-  
   #visual {
     position: absolute;
     top: 200px;
@@ -142,7 +140,7 @@
     $("#visual>div").eq(idx).addClass('on').siblings().removeClass('on');
   });
   
-var AutoSlide = setInterval(AutoRun, 2000);
+var AutoSlide = setInterval(AutoRun, 4000);
 
 function AutoRun(){
   srt++;  
