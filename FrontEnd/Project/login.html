@@ -25,7 +25,6 @@
             font-weight: 400;
             font-style: normal;
         }
-        ul, li, ol {list-style-type: none; }
         body{
             padding-top: 190px;
             font-family:'Pretendard-Regular';
@@ -46,10 +45,10 @@
             font-weight: bold;
         }
         .login_box {
-            width: 400px;
-            height: 300px;
-            margin: 100px 0 150px 0;
-            padding-top: 30px;
+            width: 450px;
+            height: 400px;
+            margin: 80px 0 100px 0;
+            padding-top: 50px;
             border: 1px solid rgb(163, 163, 163);
             border-radius: 20px;
         }
@@ -57,6 +56,7 @@
         .login_box > form {
             margin-top: 40px;
         }
+        
         .login_table{
             border:0;
             display: flex;
@@ -80,6 +80,31 @@
             border: 0;
         }
 
+        .login_box li{
+            display: inline-flex;
+            justify-content: space-around;
+        }
+
+        .btn_join {
+            width: 90px;
+            height: 40px;
+        }
+        .btn_find {
+            width: 90px;
+            height: 40px;
+        }
+        .login_img {
+            width: 50px;
+            height: 50px;
+        }
+        .sns_login {
+            margin-top: 20px;
+            
+        }
+        .sns_login > li{
+            list-style-type: disc;
+        }
+
     </style>
 </head>
 <body>
@@ -92,12 +117,24 @@
             <div class="title"> LOGIN </div>
             <form name = "loginform" action = "request.do" method = "get">
                 <table class="login_table">
-                <tr> <td height="20px" width="40px" colspan="2"> <input type ="text" name = "id" placeholder="아이디" ></td><td width="90px" rowspan="2" align="right" ><input type="submit" class="login_bt" value ="로그인"> </td></tr>
-                <tr> <td height="20px" width="40px" colspan="2"> <input type = "password" name ="password" placeholder="비밀번호">  </td><td></td></tr>
+                <tr> <td height="20px" width="40px" colspan="2"> <input type ="text" name = "id" placeholder="아이디" style="width:200px;height:40px;font-size:14px;"></td><td width="90px" rowspan="2" align="right" ><input type="submit" class="login_bt" value ="로그인"> </td></tr>
+                <tr> <td height="20px" width="40px" colspan="2"> <input type = "password" name ="password" placeholder="비밀번호" style="width:200px;height:40px;font-size:14px;">  </td><td></td></tr>
                 <tr><td height="50px" colspan="2"><input type="checkbox"> 아이디 저장</td></tr>
-                </table>
-        
+                <tr><td height="20px"></td></tr>
+                <tr>
+                    <td><button class="btn_join">회원가입</button></td>
+                    <td><button class="btn_find id">아이디 찾기</button></td>
+                    <td><button class="btn_find pwd">비밀번호 찾기</button></td>
+                </tr>
+            </table>
             </form>
+            
+            <ul class="sns_login">
+                <li><img src="" class="login_img"></li>
+                <li><img src="./img/login_naver.png" class="login_img"></li>
+
+            </ul>
+
          </div>
         </center>
     </main>
