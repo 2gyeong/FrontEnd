@@ -1,9 +1,7 @@
 
  // 이미지 자동으로 넘기기
     let index = 0;   //이미지에 접근하는 인덱스
-    //  window.onload = function(){
         slideShow();
-    //  }
     
     function slideShow() {
         let i;
